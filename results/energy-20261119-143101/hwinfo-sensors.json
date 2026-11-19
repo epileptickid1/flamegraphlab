@@ -1,0 +1,1406 @@
+{
+  "schema_version": 1,
+  "scope": "cpu_package",
+  "source": "HWiNFO64",
+  "sensor_name": "Повна споживана потужність ЦП [W]",
+  "csv_file": "hwinfo.csv",
+  "utc_offset": "+02:00",
+  "samples": [
+    {
+      "timestamp_unix_us": 1795091614811000,
+      "power_w": 41.447
+    },
+    {
+      "timestamp_unix_us": 1795091614992000,
+      "power_w": 41.447
+    },
+    {
+      "timestamp_unix_us": 1795091615492000,
+      "power_w": 46.519
+    },
+    {
+      "timestamp_unix_us": 1795091615990000,
+      "power_w": 43.733
+    },
+    {
+      "timestamp_unix_us": 1795091616490000,
+      "power_w": 39.506
+    },
+    {
+      "timestamp_unix_us": 1795091616992000,
+      "power_w": 38.136
+    },
+    {
+      "timestamp_unix_us": 1795091617491000,
+      "power_w": 42.755
+    },
+    {
+      "timestamp_unix_us": 1795091617990000,
+      "power_w": 39.946
+    },
+    {
+      "timestamp_unix_us": 1795091618487000,
+      "power_w": 38.383
+    },
+    {
+      "timestamp_unix_us": 1795091618990000,
+      "power_w": 42.099
+    },
+    {
+      "timestamp_unix_us": 1795091619492000,
+      "power_w": 44.481
+    },
+    {
+      "timestamp_unix_us": 1795091619982000,
+      "power_w": 40.516
+    },
+    {
+      "timestamp_unix_us": 1795091620485000,
+      "power_w": 39.849
+    },
+    {
+      "timestamp_unix_us": 1795091620986000,
+      "power_w": 35.878
+    },
+    {
+      "timestamp_unix_us": 1795091621486000,
+      "power_w": 33.764
+    },
+    {
+      "timestamp_unix_us": 1795091621985000,
+      "power_w": 34.018
+    },
+    {
+      "timestamp_unix_us": 1795091622485000,
+      "power_w": 33.224
+    },
+    {
+      "timestamp_unix_us": 1795091622988000,
+      "power_w": 34.375
+    },
+    {
+      "timestamp_unix_us": 1795091623487000,
+      "power_w": 33.359
+    },
+    {
+      "timestamp_unix_us": 1795091623985000,
+      "power_w": 33.228
+    },
+    {
+      "timestamp_unix_us": 1795091624486000,
+      "power_w": 33.439
+    },
+    {
+      "timestamp_unix_us": 1795091624985000,
+      "power_w": 32.846
+    },
+    {
+      "timestamp_unix_us": 1795091625486000,
+      "power_w": 32.736
+    },
+    {
+      "timestamp_unix_us": 1795091625985000,
+      "power_w": 33.153
+    },
+    {
+      "timestamp_unix_us": 1795091626486000,
+      "power_w": 33.557
+    },
+    {
+      "timestamp_unix_us": 1795091626985000,
+      "power_w": 33.409
+    },
+    {
+      "timestamp_unix_us": 1795091627485000,
+      "power_w": 33.594
+    },
+    {
+      "timestamp_unix_us": 1795091627996000,
+      "power_w": 33.08
+    },
+    {
+      "timestamp_unix_us": 1795091628494000,
+      "power_w": 32.885
+    },
+    {
+      "timestamp_unix_us": 1795091628993000,
+      "power_w": 32.875
+    },
+    {
+      "timestamp_unix_us": 1795091629493000,
+      "power_w": 32.335
+    },
+    {
+      "timestamp_unix_us": 1795091629993000,
+      "power_w": 32.335
+    },
+    {
+      "timestamp_unix_us": 1795091630490000,
+      "power_w": 33.17
+    },
+    {
+      "timestamp_unix_us": 1795091630990000,
+      "power_w": 33.686
+    },
+    {
+      "timestamp_unix_us": 1795091631495000,
+      "power_w": 34.442
+    },
+    {
+      "timestamp_unix_us": 1795091631996000,
+      "power_w": 33.287
+    },
+    {
+      "timestamp_unix_us": 1795091632497000,
+      "power_w": 33.169
+    },
+    {
+      "timestamp_unix_us": 1795091632994000,
+      "power_w": 32.299
+    },
+    {
+      "timestamp_unix_us": 1795091633493000,
+      "power_w": 32.185
+    },
+    {
+      "timestamp_unix_us": 1795091633993000,
+      "power_w": 32.724
+    },
+    {
+      "timestamp_unix_us": 1795091634492000,
+      "power_w": 33.244
+    },
+    {
+      "timestamp_unix_us": 1795091634991000,
+      "power_w": 32.579
+    },
+    {
+      "timestamp_unix_us": 1795091635492000,
+      "power_w": 32.702
+    },
+    {
+      "timestamp_unix_us": 1795091635993000,
+      "power_w": 33.812
+    },
+    {
+      "timestamp_unix_us": 1795091636489000,
+      "power_w": 33.751
+    },
+    {
+      "timestamp_unix_us": 1795091636989000,
+      "power_w": 33.373
+    },
+    {
+      "timestamp_unix_us": 1795091637488000,
+      "power_w": 32.222
+    },
+    {
+      "timestamp_unix_us": 1795091637986000,
+      "power_w": 31.604
+    },
+    {
+      "timestamp_unix_us": 1795091638484000,
+      "power_w": 31.9
+    },
+    {
+      "timestamp_unix_us": 1795091638982000,
+      "power_w": 32.895
+    },
+    {
+      "timestamp_unix_us": 1795091639495000,
+      "power_w": 32.74
+    },
+    {
+      "timestamp_unix_us": 1795091639995000,
+      "power_w": 32.298
+    },
+    {
+      "timestamp_unix_us": 1795091640492000,
+      "power_w": 32.954
+    },
+    {
+      "timestamp_unix_us": 1795091640988000,
+      "power_w": 32.787
+    },
+    {
+      "timestamp_unix_us": 1795091641488000,
+      "power_w": 33.037
+    },
+    {
+      "timestamp_unix_us": 1795091641987000,
+      "power_w": 36.551
+    },
+    {
+      "timestamp_unix_us": 1795091642487000,
+      "power_w": 32.624
+    },
+    {
+      "timestamp_unix_us": 1795091642985000,
+      "power_w": 32.872
+    },
+    {
+      "timestamp_unix_us": 1795091643482000,
+      "power_w": 34.059
+    },
+    {
+      "timestamp_unix_us": 1795091643982000,
+      "power_w": 33.92
+    },
+    {
+      "timestamp_unix_us": 1795091644490000,
+      "power_w": 49.714
+    },
+    {
+      "timestamp_unix_us": 1795091644994000,
+      "power_w": 55.682
+    },
+    {
+      "timestamp_unix_us": 1795091645486000,
+      "power_w": 54.774
+    },
+    {
+      "timestamp_unix_us": 1795091645993000,
+      "power_w": 58.081
+    },
+    {
+      "timestamp_unix_us": 1795091646485000,
+      "power_w": 54.763
+    },
+    {
+      "timestamp_unix_us": 1795091646993000,
+      "power_w": 60.739
+    },
+    {
+      "timestamp_unix_us": 1795091647497000,
+      "power_w": 55.522
+    },
+    {
+      "timestamp_unix_us": 1795091647990000,
+      "power_w": 55.479
+    },
+    {
+      "timestamp_unix_us": 1795091648494000,
+      "power_w": 55.914
+    },
+    {
+      "timestamp_unix_us": 1795091648987000,
+      "power_w": 55.476
+    },
+    {
+      "timestamp_unix_us": 1795091649495000,
+      "power_w": 56.011
+    },
+    {
+      "timestamp_unix_us": 1795091649986000,
+      "power_w": 54.922
+    },
+    {
+      "timestamp_unix_us": 1795091650490000,
+      "power_w": 55.617
+    },
+    {
+      "timestamp_unix_us": 1795091650995000,
+      "power_w": 55.825
+    },
+    {
+      "timestamp_unix_us": 1795091651486000,
+      "power_w": 55.177
+    },
+    {
+      "timestamp_unix_us": 1795091651987000,
+      "power_w": 55.076
+    },
+    {
+      "timestamp_unix_us": 1795091652496000,
+      "power_w": 54.444
+    },
+    {
+      "timestamp_unix_us": 1795091652985000,
+      "power_w": 54.627
+    },
+    {
+      "timestamp_unix_us": 1795091653489000,
+      "power_w": 54.039
+    },
+    {
+      "timestamp_unix_us": 1795091653981000,
+      "power_w": 54.67
+    },
+    {
+      "timestamp_unix_us": 1795091654487000,
+      "power_w": 54.302
+    },
+    {
+      "timestamp_unix_us": 1795091654982000,
+      "power_w": 53.892
+    },
+    {
+      "timestamp_unix_us": 1795091655493000,
+      "power_w": 54.135
+    },
+    {
+      "timestamp_unix_us": 1795091655986000,
+      "power_w": 55.238
+    },
+    {
+      "timestamp_unix_us": 1795091656495000,
+      "power_w": 54.21
+    },
+    {
+      "timestamp_unix_us": 1795091656987000,
+      "power_w": 54.21
+    },
+    {
+      "timestamp_unix_us": 1795091657495000,
+      "power_w": 54.357
+    },
+    {
+      "timestamp_unix_us": 1795091657987000,
+      "power_w": 53.799
+    },
+    {
+      "timestamp_unix_us": 1795091658482000,
+      "power_w": 54.938
+    },
+    {
+      "timestamp_unix_us": 1795091658993000,
+      "power_w": 54.208
+    },
+    {
+      "timestamp_unix_us": 1795091659483000,
+      "power_w": 53.266
+    },
+    {
+      "timestamp_unix_us": 1795091659988000,
+      "power_w": 54.842
+    },
+    {
+      "timestamp_unix_us": 1795091660503000,
+      "power_w": 53.83
+    },
+    {
+      "timestamp_unix_us": 1795091661002000,
+      "power_w": 56.5
+    },
+    {
+      "timestamp_unix_us": 1795091661518000,
+      "power_w": 54.624
+    },
+    {
+      "timestamp_unix_us": 1795091662020000,
+      "power_w": 53.505
+    },
+    {
+      "timestamp_unix_us": 1795091662522000,
+      "power_w": 54.011
+    },
+    {
+      "timestamp_unix_us": 1795091663013000,
+      "power_w": 53.661
+    },
+    {
+      "timestamp_unix_us": 1795091663518000,
+      "power_w": 53.261
+    },
+    {
+      "timestamp_unix_us": 1795091664016000,
+      "power_w": 52.835
+    },
+    {
+      "timestamp_unix_us": 1795091664517000,
+      "power_w": 53.186
+    },
+    {
+      "timestamp_unix_us": 1795091665014000,
+      "power_w": 57.036
+    },
+    {
+      "timestamp_unix_us": 1795091665513000,
+      "power_w": 54.855
+    },
+    {
+      "timestamp_unix_us": 1795091666013000,
+      "power_w": 57.973
+    },
+    {
+      "timestamp_unix_us": 1795091666516000,
+      "power_w": 57.234
+    },
+    {
+      "timestamp_unix_us": 1795091667014000,
+      "power_w": 55.35
+    },
+    {
+      "timestamp_unix_us": 1795091667514000,
+      "power_w": 56.365
+    },
+    {
+      "timestamp_unix_us": 1795091668014000,
+      "power_w": 55.246
+    },
+    {
+      "timestamp_unix_us": 1795091668515000,
+      "power_w": 56.142
+    },
+    {
+      "timestamp_unix_us": 1795091669027000,
+      "power_w": 65.102
+    },
+    {
+      "timestamp_unix_us": 1795091669517000,
+      "power_w": 62.516
+    },
+    {
+      "timestamp_unix_us": 1795091670015000,
+      "power_w": 72.72
+    },
+    {
+      "timestamp_unix_us": 1795091670519000,
+      "power_w": 71.786
+    },
+    {
+      "timestamp_unix_us": 1795091671016000,
+      "power_w": 66.363
+    },
+    {
+      "timestamp_unix_us": 1795091671515000,
+      "power_w": 72.43
+    },
+    {
+      "timestamp_unix_us": 1795091672018000,
+      "power_w": 84.778
+    },
+    {
+      "timestamp_unix_us": 1795091672515000,
+      "power_w": 81.625
+    },
+    {
+      "timestamp_unix_us": 1795091673016000,
+      "power_w": 83.294
+    },
+    {
+      "timestamp_unix_us": 1795091673518000,
+      "power_w": 80.311
+    },
+    {
+      "timestamp_unix_us": 1795091674016000,
+      "power_w": 79.77
+    },
+    {
+      "timestamp_unix_us": 1795091674526000,
+      "power_w": 81.692
+    },
+    {
+      "timestamp_unix_us": 1795091675014000,
+      "power_w": 75.097
+    },
+    {
+      "timestamp_unix_us": 1795091675527000,
+      "power_w": 60.503
+    },
+    {
+      "timestamp_unix_us": 1795091676014000,
+      "power_w": 59.585
+    },
+    {
+      "timestamp_unix_us": 1795091676517000,
+      "power_w": 70.489
+    },
+    {
+      "timestamp_unix_us": 1795091677014000,
+      "power_w": 67.919
+    },
+    {
+      "timestamp_unix_us": 1795091677520000,
+      "power_w": 71.552
+    },
+    {
+      "timestamp_unix_us": 1795091678015000,
+      "power_w": 70.34
+    },
+    {
+      "timestamp_unix_us": 1795091678527000,
+      "power_w": 68.501
+    },
+    {
+      "timestamp_unix_us": 1795091679033000,
+      "power_w": 71.134
+    },
+    {
+      "timestamp_unix_us": 1795091679533000,
+      "power_w": 69.097
+    },
+    {
+      "timestamp_unix_us": 1795091680035000,
+      "power_w": 69.798
+    },
+    {
+      "timestamp_unix_us": 1795091680531000,
+      "power_w": 69.736
+    },
+    {
+      "timestamp_unix_us": 1795091681036000,
+      "power_w": 69.206
+    },
+    {
+      "timestamp_unix_us": 1795091681536000,
+      "power_w": 68.492
+    },
+    {
+      "timestamp_unix_us": 1795091682030000,
+      "power_w": 71.883
+    },
+    {
+      "timestamp_unix_us": 1795091682532000,
+      "power_w": 65.652
+    },
+    {
+      "timestamp_unix_us": 1795091683034000,
+      "power_w": 66.6
+    },
+    {
+      "timestamp_unix_us": 1795091683532000,
+      "power_w": 65.464
+    },
+    {
+      "timestamp_unix_us": 1795091684031000,
+      "power_w": 64.212
+    },
+    {
+      "timestamp_unix_us": 1795091684531000,
+      "power_w": 63.464
+    },
+    {
+      "timestamp_unix_us": 1795091685031000,
+      "power_w": 61.494
+    },
+    {
+      "timestamp_unix_us": 1795091685531000,
+      "power_w": 39.405
+    },
+    {
+      "timestamp_unix_us": 1795091686034000,
+      "power_w": 38.392
+    },
+    {
+      "timestamp_unix_us": 1795091686531000,
+      "power_w": 38.963
+    },
+    {
+      "timestamp_unix_us": 1795091687034000,
+      "power_w": 39.526
+    },
+    {
+      "timestamp_unix_us": 1795091687531000,
+      "power_w": 38.81
+    },
+    {
+      "timestamp_unix_us": 1795091688031000,
+      "power_w": 41.649
+    },
+    {
+      "timestamp_unix_us": 1795091688534000,
+      "power_w": 48.063
+    },
+    {
+      "timestamp_unix_us": 1795091689033000,
+      "power_w": 43.632
+    },
+    {
+      "timestamp_unix_us": 1795091689536000,
+      "power_w": 43.703
+    },
+    {
+      "timestamp_unix_us": 1795091690034000,
+      "power_w": 43.889
+    },
+    {
+      "timestamp_unix_us": 1795091690531000,
+      "power_w": 41.029
+    },
+    {
+      "timestamp_unix_us": 1795091691033000,
+      "power_w": 40.515
+    },
+    {
+      "timestamp_unix_us": 1795091691529000,
+      "power_w": 40.186
+    },
+    {
+      "timestamp_unix_us": 1795091692032000,
+      "power_w": 40.829
+    },
+    {
+      "timestamp_unix_us": 1795091692534000,
+      "power_w": 40.555
+    },
+    {
+      "timestamp_unix_us": 1795091693029000,
+      "power_w": 41.502
+    },
+    {
+      "timestamp_unix_us": 1795091693537000,
+      "power_w": 41.335
+    },
+    {
+      "timestamp_unix_us": 1795091694031000,
+      "power_w": 41.355
+    },
+    {
+      "timestamp_unix_us": 1795091694529000,
+      "power_w": 41.779
+    },
+    {
+      "timestamp_unix_us": 1795091695031000,
+      "power_w": 41.171
+    },
+    {
+      "timestamp_unix_us": 1795091695533000,
+      "power_w": 49.573
+    },
+    {
+      "timestamp_unix_us": 1795091696031000,
+      "power_w": 44.972
+    },
+    {
+      "timestamp_unix_us": 1795091696531000,
+      "power_w": 47.334
+    },
+    {
+      "timestamp_unix_us": 1795091697034000,
+      "power_w": 47.334
+    },
+    {
+      "timestamp_unix_us": 1795091697533000,
+      "power_w": 43.134
+    },
+    {
+      "timestamp_unix_us": 1795091698035000,
+      "power_w": 41.743
+    },
+    {
+      "timestamp_unix_us": 1795091698532000,
+      "power_w": 41.679
+    },
+    {
+      "timestamp_unix_us": 1795091699032000,
+      "power_w": 41.549
+    },
+    {
+      "timestamp_unix_us": 1795091699532000,
+      "power_w": 41.968
+    },
+    {
+      "timestamp_unix_us": 1795091700032000,
+      "power_w": 43.699
+    },
+    {
+      "timestamp_unix_us": 1795091700528000,
+      "power_w": 43.763
+    },
+    {
+      "timestamp_unix_us": 1795091701034000,
+      "power_w": 44.162
+    },
+    {
+      "timestamp_unix_us": 1795091701529000,
+      "power_w": 42.812
+    },
+    {
+      "timestamp_unix_us": 1795091702030000,
+      "power_w": 45.502
+    },
+    {
+      "timestamp_unix_us": 1795091702533000,
+      "power_w": 42.96
+    },
+    {
+      "timestamp_unix_us": 1795091703029000,
+      "power_w": 44.334
+    },
+    {
+      "timestamp_unix_us": 1795091703533000,
+      "power_w": 42.795
+    },
+    {
+      "timestamp_unix_us": 1795091704029000,
+      "power_w": 43.245
+    },
+    {
+      "timestamp_unix_us": 1795091704529000,
+      "power_w": 42.646
+    },
+    {
+      "timestamp_unix_us": 1795091705030000,
+      "power_w": 42.027
+    },
+    {
+      "timestamp_unix_us": 1795091705530000,
+      "power_w": 58.735
+    },
+    {
+      "timestamp_unix_us": 1795091706032000,
+      "power_w": 65.843
+    },
+    {
+      "timestamp_unix_us": 1795091706529000,
+      "power_w": 65.813
+    },
+    {
+      "timestamp_unix_us": 1795091707034000,
+      "power_w": 68.267
+    },
+    {
+      "timestamp_unix_us": 1795091707529000,
+      "power_w": 65.909
+    },
+    {
+      "timestamp_unix_us": 1795091708031000,
+      "power_w": 69.14
+    },
+    {
+      "timestamp_unix_us": 1795091708537000,
+      "power_w": 66.444
+    },
+    {
+      "timestamp_unix_us": 1795091709030000,
+      "power_w": 70.42
+    },
+    {
+      "timestamp_unix_us": 1795091709530000,
+      "power_w": 66.739
+    },
+    {
+      "timestamp_unix_us": 1795091710036000,
+      "power_w": 69.799
+    },
+    {
+      "timestamp_unix_us": 1795091710529000,
+      "power_w": 73.67
+    },
+    {
+      "timestamp_unix_us": 1795091711031000,
+      "power_w": 69.827
+    },
+    {
+      "timestamp_unix_us": 1795091711530000,
+      "power_w": 69.603
+    },
+    {
+      "timestamp_unix_us": 1795091712030000,
+      "power_w": 69.538
+    },
+    {
+      "timestamp_unix_us": 1795091712536000,
+      "power_w": 70.969
+    },
+    {
+      "timestamp_unix_us": 1795091713029000,
+      "power_w": 69.451
+    },
+    {
+      "timestamp_unix_us": 1795091713533000,
+      "power_w": 70.301
+    },
+    {
+      "timestamp_unix_us": 1795091714033000,
+      "power_w": 70.635
+    },
+    {
+      "timestamp_unix_us": 1795091714536000,
+      "power_w": 67.458
+    },
+    {
+      "timestamp_unix_us": 1795091715032000,
+      "power_w": 69.671
+    },
+    {
+      "timestamp_unix_us": 1795091715534000,
+      "power_w": 68.597
+    },
+    {
+      "timestamp_unix_us": 1795091716032000,
+      "power_w": 70.772
+    },
+    {
+      "timestamp_unix_us": 1795091716534000,
+      "power_w": 71.338
+    },
+    {
+      "timestamp_unix_us": 1795091717030000,
+      "power_w": 70.14
+    },
+    {
+      "timestamp_unix_us": 1795091717530000,
+      "power_w": 70.096
+    },
+    {
+      "timestamp_unix_us": 1795091718029000,
+      "power_w": 70.481
+    },
+    {
+      "timestamp_unix_us": 1795091718533000,
+      "power_w": 70.792
+    },
+    {
+      "timestamp_unix_us": 1795091719033000,
+      "power_w": 70.573
+    },
+    {
+      "timestamp_unix_us": 1795091719529000,
+      "power_w": 71.503
+    },
+    {
+      "timestamp_unix_us": 1795091720033000,
+      "power_w": 70.811
+    },
+    {
+      "timestamp_unix_us": 1795091720536000,
+      "power_w": 68.742
+    },
+    {
+      "timestamp_unix_us": 1795091721035000,
+      "power_w": 69.003
+    },
+    {
+      "timestamp_unix_us": 1795091721530000,
+      "power_w": 69.203
+    },
+    {
+      "timestamp_unix_us": 1795091722035000,
+      "power_w": 72.184
+    },
+    {
+      "timestamp_unix_us": 1795091722530000,
+      "power_w": 59.674
+    },
+    {
+      "timestamp_unix_us": 1795091723030000,
+      "power_w": 43.447
+    },
+    {
+      "timestamp_unix_us": 1795091723532000,
+      "power_w": 43.738
+    },
+    {
+      "timestamp_unix_us": 1795091724030000,
+      "power_w": 44.248
+    },
+    {
+      "timestamp_unix_us": 1795091724535000,
+      "power_w": 45.247
+    },
+    {
+      "timestamp_unix_us": 1795091725029000,
+      "power_w": 43.184
+    },
+    {
+      "timestamp_unix_us": 1795091725532000,
+      "power_w": 42.445
+    },
+    {
+      "timestamp_unix_us": 1795091726028000,
+      "power_w": 43.177
+    },
+    {
+      "timestamp_unix_us": 1795091726528000,
+      "power_w": 43.701
+    },
+    {
+      "timestamp_unix_us": 1795091727032000,
+      "power_w": 43.481
+    },
+    {
+      "timestamp_unix_us": 1795091727531000,
+      "power_w": 42.552
+    },
+    {
+      "timestamp_unix_us": 1795091728036000,
+      "power_w": 42.429
+    },
+    {
+      "timestamp_unix_us": 1795091728530000,
+      "power_w": 43.047
+    },
+    {
+      "timestamp_unix_us": 1795091729034000,
+      "power_w": 42.147
+    },
+    {
+      "timestamp_unix_us": 1795091729532000,
+      "power_w": 42.364
+    },
+    {
+      "timestamp_unix_us": 1795091730029000,
+      "power_w": 42.248
+    },
+    {
+      "timestamp_unix_us": 1795091730535000,
+      "power_w": 42.559
+    },
+    {
+      "timestamp_unix_us": 1795091731029000,
+      "power_w": 42.311
+    },
+    {
+      "timestamp_unix_us": 1795091731536000,
+      "power_w": 41.996
+    },
+    {
+      "timestamp_unix_us": 1795091732037000,
+      "power_w": 41.788
+    },
+    {
+      "timestamp_unix_us": 1795091732531000,
+      "power_w": 41.886
+    },
+    {
+      "timestamp_unix_us": 1795091733037000,
+      "power_w": 43.655
+    },
+    {
+      "timestamp_unix_us": 1795091733534000,
+      "power_w": 50.114
+    },
+    {
+      "timestamp_unix_us": 1795091734031000,
+      "power_w": 42.665
+    },
+    {
+      "timestamp_unix_us": 1795091734532000,
+      "power_w": 41.091
+    },
+    {
+      "timestamp_unix_us": 1795091735035000,
+      "power_w": 41.279
+    },
+    {
+      "timestamp_unix_us": 1795091735536000,
+      "power_w": 41.279
+    },
+    {
+      "timestamp_unix_us": 1795091736030000,
+      "power_w": 40.179
+    },
+    {
+      "timestamp_unix_us": 1795091736531000,
+      "power_w": 41.313
+    },
+    {
+      "timestamp_unix_us": 1795091737031000,
+      "power_w": 40.246
+    },
+    {
+      "timestamp_unix_us": 1795091737535000,
+      "power_w": 42.996
+    },
+    {
+      "timestamp_unix_us": 1795091738031000,
+      "power_w": 44.461
+    },
+    {
+      "timestamp_unix_us": 1795091738536000,
+      "power_w": 40.754
+    },
+    {
+      "timestamp_unix_us": 1795091739029000,
+      "power_w": 40.525
+    },
+    {
+      "timestamp_unix_us": 1795091739538000,
+      "power_w": 40.358
+    },
+    {
+      "timestamp_unix_us": 1795091740031000,
+      "power_w": 42.668
+    },
+    {
+      "timestamp_unix_us": 1795091740529000,
+      "power_w": 39.956
+    },
+    {
+      "timestamp_unix_us": 1795091741032000,
+      "power_w": 41.593
+    },
+    {
+      "timestamp_unix_us": 1795091741529000,
+      "power_w": 42.708
+    },
+    {
+      "timestamp_unix_us": 1795091742030000,
+      "power_w": 41.281
+    },
+    {
+      "timestamp_unix_us": 1795091742532000,
+      "power_w": 41.827
+    },
+    {
+      "timestamp_unix_us": 1795091743034000,
+      "power_w": 42.775
+    },
+    {
+      "timestamp_unix_us": 1795091743531000,
+      "power_w": 41.649
+    },
+    {
+      "timestamp_unix_us": 1795091744031000,
+      "power_w": 43.012
+    },
+    {
+      "timestamp_unix_us": 1795091744533000,
+      "power_w": 42.068
+    },
+    {
+      "timestamp_unix_us": 1795091745028000,
+      "power_w": 41.695
+    },
+    {
+      "timestamp_unix_us": 1795091745533000,
+      "power_w": 42.067
+    },
+    {
+      "timestamp_unix_us": 1795091746035000,
+      "power_w": 42.63
+    },
+    {
+      "timestamp_unix_us": 1795091746536000,
+      "power_w": 41.169
+    },
+    {
+      "timestamp_unix_us": 1795091747031000,
+      "power_w": 41.634
+    },
+    {
+      "timestamp_unix_us": 1795091747529000,
+      "power_w": 42.84
+    },
+    {
+      "timestamp_unix_us": 1795091748032000,
+      "power_w": 42.918
+    },
+    {
+      "timestamp_unix_us": 1795091748531000,
+      "power_w": 44.509
+    },
+    {
+      "timestamp_unix_us": 1795091749030000,
+      "power_w": 42.061
+    },
+    {
+      "timestamp_unix_us": 1795091749529000,
+      "power_w": 42.305
+    },
+    {
+      "timestamp_unix_us": 1795091750035000,
+      "power_w": 41.69
+    },
+    {
+      "timestamp_unix_us": 1795091750536000,
+      "power_w": 44.088
+    },
+    {
+      "timestamp_unix_us": 1795091751035000,
+      "power_w": 41.997
+    },
+    {
+      "timestamp_unix_us": 1795091751528000,
+      "power_w": 44.597
+    },
+    {
+      "timestamp_unix_us": 1795091752028000,
+      "power_w": 46.081
+    },
+    {
+      "timestamp_unix_us": 1795091752529000,
+      "power_w": 45.135
+    },
+    {
+      "timestamp_unix_us": 1795091753031000,
+      "power_w": 42.516
+    },
+    {
+      "timestamp_unix_us": 1795091753534000,
+      "power_w": 44.642
+    },
+    {
+      "timestamp_unix_us": 1795091754029000,
+      "power_w": 41.155
+    },
+    {
+      "timestamp_unix_us": 1795091754531000,
+      "power_w": 41.651
+    },
+    {
+      "timestamp_unix_us": 1795091755028000,
+      "power_w": 40.684
+    },
+    {
+      "timestamp_unix_us": 1795091755534000,
+      "power_w": 40.612
+    },
+    {
+      "timestamp_unix_us": 1795091756030000,
+      "power_w": 46.728
+    },
+    {
+      "timestamp_unix_us": 1795091756529000,
+      "power_w": 39.734
+    },
+    {
+      "timestamp_unix_us": 1795091757034000,
+      "power_w": 42.753
+    },
+    {
+      "timestamp_unix_us": 1795091757531000,
+      "power_w": 39.988
+    },
+    {
+      "timestamp_unix_us": 1795091758035000,
+      "power_w": 39.92
+    },
+    {
+      "timestamp_unix_us": 1795091758528000,
+      "power_w": 40.104
+    },
+    {
+      "timestamp_unix_us": 1795091759031000,
+      "power_w": 39.935
+    },
+    {
+      "timestamp_unix_us": 1795091759530000,
+      "power_w": 42.946
+    },
+    {
+      "timestamp_unix_us": 1795091760030000,
+      "power_w": 40.89
+    },
+    {
+      "timestamp_unix_us": 1795091760534000,
+      "power_w": 42.886
+    },
+    {
+      "timestamp_unix_us": 1795091761031000,
+      "power_w": 41.807
+    },
+    {
+      "timestamp_unix_us": 1795091761531000,
+      "power_w": 41.664
+    },
+    {
+      "timestamp_unix_us": 1795091762028000,
+      "power_w": 42.968
+    },
+    {
+      "timestamp_unix_us": 1795091762530000,
+      "power_w": 41.272
+    },
+    {
+      "timestamp_unix_us": 1795091763030000,
+      "power_w": 40.076
+    },
+    {
+      "timestamp_unix_us": 1795091763531000,
+      "power_w": 41.004
+    },
+    {
+      "timestamp_unix_us": 1795091764033000,
+      "power_w": 46.943
+    },
+    {
+      "timestamp_unix_us": 1795091764536000,
+      "power_w": 40.117
+    },
+    {
+      "timestamp_unix_us": 1795091765034000,
+      "power_w": 39.946
+    },
+    {
+      "timestamp_unix_us": 1795091765536000,
+      "power_w": 39.798
+    },
+    {
+      "timestamp_unix_us": 1795091766032000,
+      "power_w": 40.252
+    },
+    {
+      "timestamp_unix_us": 1795091766529000,
+      "power_w": 40.014
+    },
+    {
+      "timestamp_unix_us": 1795091767034000,
+      "power_w": 40.347
+    },
+    {
+      "timestamp_unix_us": 1795091767534000,
+      "power_w": 41.841
+    },
+    {
+      "timestamp_unix_us": 1795091768035000,
+      "power_w": 40.854
+    },
+    {
+      "timestamp_unix_us": 1795091768528000,
+      "power_w": 40.131
+    },
+    {
+      "timestamp_unix_us": 1795091769028000,
+      "power_w": 40.483
+    },
+    {
+      "timestamp_unix_us": 1795091769531000,
+      "power_w": 40.518
+    },
+    {
+      "timestamp_unix_us": 1795091770031000,
+      "power_w": 41.657
+    },
+    {
+      "timestamp_unix_us": 1795091770534000,
+      "power_w": 42.674
+    },
+    {
+      "timestamp_unix_us": 1795091771031000,
+      "power_w": 41.304
+    },
+    {
+      "timestamp_unix_us": 1795091771531000,
+      "power_w": 48.893
+    },
+    {
+      "timestamp_unix_us": 1795091772028000,
+      "power_w": 48.703
+    },
+    {
+      "timestamp_unix_us": 1795091772533000,
+      "power_w": 44.796
+    },
+    {
+      "timestamp_unix_us": 1795091773031000,
+      "power_w": 44.796
+    },
+    {
+      "timestamp_unix_us": 1795091773531000,
+      "power_w": 45.478
+    },
+    {
+      "timestamp_unix_us": 1795091774035000,
+      "power_w": 45.913
+    },
+    {
+      "timestamp_unix_us": 1795091774528000,
+      "power_w": 52.543
+    },
+    {
+      "timestamp_unix_us": 1795091775031000,
+      "power_w": 47.842
+    },
+    {
+      "timestamp_unix_us": 1795091775531000,
+      "power_w": 41.076
+    },
+    {
+      "timestamp_unix_us": 1795091776028000,
+      "power_w": 42.214
+    },
+    {
+      "timestamp_unix_us": 1795091776537000,
+      "power_w": 41.756
+    },
+    {
+      "timestamp_unix_us": 1795091777032000,
+      "power_w": 42.261
+    },
+    {
+      "timestamp_unix_us": 1795091777529000,
+      "power_w": 40.6
+    },
+    {
+      "timestamp_unix_us": 1795091778035000,
+      "power_w": 40.327
+    },
+    {
+      "timestamp_unix_us": 1795091778529000,
+      "power_w": 40.22
+    },
+    {
+      "timestamp_unix_us": 1795091779032000,
+      "power_w": 40.579
+    },
+    {
+      "timestamp_unix_us": 1795091779530000,
+      "power_w": 40.741
+    },
+    {
+      "timestamp_unix_us": 1795091780035000,
+      "power_w": 42.353
+    },
+    {
+      "timestamp_unix_us": 1795091780532000,
+      "power_w": 39.681
+    },
+    {
+      "timestamp_unix_us": 1795091781029000,
+      "power_w": 41.231
+    },
+    {
+      "timestamp_unix_us": 1795091781531000,
+      "power_w": 39.347
+    },
+    {
+      "timestamp_unix_us": 1795091782031000,
+      "power_w": 39.954
+    },
+    {
+      "timestamp_unix_us": 1795091782530000,
+      "power_w": 39.773
+    },
+    {
+      "timestamp_unix_us": 1795091783034000,
+      "power_w": 40.143
+    },
+    {
+      "timestamp_unix_us": 1795091783530000,
+      "power_w": 40.028
+    },
+    {
+      "timestamp_unix_us": 1795091784033000,
+      "power_w": 40.405
+    },
+    {
+      "timestamp_unix_us": 1795091784532000,
+      "power_w": 40.229
+    },
+    {
+      "timestamp_unix_us": 1795091785029000,
+      "power_w": 41.89
+    },
+    {
+      "timestamp_unix_us": 1795091785529000,
+      "power_w": 42.209
+    },
+    {
+      "timestamp_unix_us": 1795091786030000,
+      "power_w": 41.867
+    },
+    {
+      "timestamp_unix_us": 1795091786529000,
+      "power_w": 41.12
+    },
+    {
+      "timestamp_unix_us": 1795091787029000,
+      "power_w": 43.288
+    },
+    {
+      "timestamp_unix_us": 1795091787533000,
+      "power_w": 41.554
+    },
+    {
+      "timestamp_unix_us": 1795091788033000,
+      "power_w": 41.806
+    },
+    {
+      "timestamp_unix_us": 1795091788530000,
+      "power_w": 42.266
+    }
+  ]
+}

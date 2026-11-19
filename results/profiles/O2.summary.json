@@ -1,0 +1,53 @@
+{
+  "source": {
+    "dump": "D:\\homework\\sysprog\\flamegraph\\results\\wpr-20261117-114145\\O2-dump.txt",
+    "child_json": "D:\\homework\\sysprog\\flamegraph\\results\\wpr-20261117-114145\\O2-child.json",
+    "decode_warnings": {
+      "path": "D:\\homework\\sysprog\\flamegraph\\results\\wpr-20261117-114145\\O2-decode-warnings.txt",
+      "warning_lines": 6,
+      "invalid_event_warnings": 6
+    }
+  },
+  "mode": "O2",
+  "pid": 2272,
+  "process_command_line": "P-Start,     134931,    benchmark.exe (2272),       4832,          1, 0x0000a78ffec25080, 0x000000037e4fe000, 0x00000000, S-1-5-21-1546350986-4085091527-1605043640-1001, \"D:\\homework\\sysprog\\flamegraph\\build\\O2\\benchmark.exe\" --n 10000000 --repeats 100 --batches 40 --mode sequential, <none>, <none>",
+  "process_start_timestamp_us_since_trace_start": 134931,
+  "process_end_timestamp_us_since_trace_start": 3331158,
+  "trace": {
+    "trace_start_filetime_100ns": 134393821251924523,
+    "trace_start_unix_us": 1794908525192452,
+    "profile_timestamp_unit": "microseconds elapsed since trace start (aligned against child UTC timestamps)",
+    "events_lost": 0,
+    "buffers_lost": 0,
+    "header": "OS Version: 10.0.26300, Trace Size: 40960KB, Events Lost: 0, Buffers lost: 0, Trace Start: 134393821251924523, Trace Length: 3 sec, PointerSize: 8, Trace Name: D:\\homework\\sysprog\\flamegraph\\results\\wpr-20261117-114145\\O2.etl"
+  },
+  "workload_window": {
+    "start_unix_us": 1794908525352169,
+    "end_unix_us": 1794908528518274,
+    "duration_us": 3166105
+  },
+  "alignment": {
+    "process_start_to_workload_start_us": 24786,
+    "workload_end_to_process_end_us": 5336
+  },
+  "counts": {
+    "target_profile_events": 3162,
+    "target_profile_outside_workload": 6,
+    "target_profile_in_workload": 3156,
+    "samples_with_unresolved_symbols": 3156,
+    "samples_with_stack": 3156,
+    "folded_sample_weight": 3156,
+    "samples_without_benchmark_image_frame": 9
+  },
+  "notes": [
+    "Only SampledProfile events with the benchmark process PID were considered.",
+    "Only samples whose trace-start-relative timestamp maps into child.json's measured workload window were folded.",
+    "Stack frames are ordered using ETW Stack No. values and emitted root-to-leaf; no frames were inferred.",
+    "Stacks without a benchmark image frame are retained; these can be runtime helper threads or partial stacks, not necessarily truncation."
+  ],
+  "outputs": {
+    "folded": "D:\\homework\\sysprog\\flamegraph\\results\\profiles\\O2.folded",
+    "top": "D:\\homework\\sysprog\\flamegraph\\results\\profiles\\O2.top.txt",
+    "svg": "D:\\homework\\sysprog\\flamegraph\\graphs\\O2.svg"
+  }
+}

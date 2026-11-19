@@ -1,0 +1,81 @@
+{
+  "scope": "cpu_package",
+  "medians": {
+    "Od": {
+      "duration_s": 40.761371,
+      "sensor_energy_j": 2485.9282810962127,
+      "baseline_mean_power_w": 33.069750813671945,
+      "incremental_energy_j_estimate": 1137.9598993025788
+    },
+    "O2": {
+      "duration_s": 17.350496,
+      "sensor_energy_j": 1187.2823654966385,
+      "baseline_mean_power_w": 43.05826889931093,
+      "incremental_energy_j_estimate": 440.2000431922198
+    }
+  },
+  "runs": [
+    {
+      "config": "Od",
+      "run": 1,
+      "schema_version": 1,
+      "measurement_status": "measured_sensor_series_estimate",
+      "run_file": "results\\energy-20261119-143101\\Od-1-child.json",
+      "sensor_file": "results\\energy-20261119-143101\\hwinfo-sensors.json",
+      "source": "HWiNFO64",
+      "sensor_name": "Повна споживана потужність ЦП [W]",
+      "scope": "cpu_package",
+      "workload": {
+        "n": 10000000,
+        "repeats": 100,
+        "batches": 200,
+        "mode": "sequential",
+        "threads": 1,
+        "seed": 42
+      },
+      "run_start_unix_us": 1795091643970791,
+      "run_end_unix_us": 1795091684732162,
+      "duration_s": 40.761371,
+      "baseline_start_unix_us": 1795091623938989,
+      "baseline_end_unix_us": 1795091643962340,
+      "baseline_mean_power_w": 33.069750813671945,
+      "sensor_energy_j": 2485.9282810962127,
+      "baseline_energy_j": 662.1672280246889,
+      "incremental_energy_j_estimate": 1137.9598993025788,
+      "method": "trapezoidal_sensor_power_integration_minus_baseline_mean_power_times_run_duration",
+      "attribution": "incremental estimate for selected sensor scope; not exact per-process energy",
+      "max_gap_s": 1.0
+    },
+    {
+      "config": "O2",
+      "run": 1,
+      "schema_version": 1,
+      "measurement_status": "measured_sensor_series_estimate",
+      "run_file": "results\\energy-20261119-143101\\O2-1-child.json",
+      "sensor_file": "results\\energy-20261119-143101\\hwinfo-sensors.json",
+      "source": "HWiNFO64",
+      "sensor_name": "Повна споживана потужність ЦП [W]",
+      "scope": "cpu_package",
+      "workload": {
+        "n": 10000000,
+        "repeats": 100,
+        "batches": 200,
+        "mode": "sequential",
+        "threads": 1,
+        "seed": 42
+      },
+      "run_start_unix_us": 1795091704814500,
+      "run_end_unix_us": 1795091722164996,
+      "duration_s": 17.350496,
+      "baseline_start_unix_us": 1795091684802331,
+      "baseline_end_unix_us": 1795091704806236,
+      "baseline_mean_power_w": 43.05826889931093,
+      "sensor_energy_j": 1187.2823654966385,
+      "baseline_energy_j": 861.3335205262704,
+      "incremental_energy_j_estimate": 440.2000431922198,
+      "method": "trapezoidal_sensor_power_integration_minus_baseline_mean_power_times_run_duration",
+      "attribution": "incremental estimate for selected sensor scope; not exact per-process energy",
+      "max_gap_s": 1.0
+    }
+  ]
+}

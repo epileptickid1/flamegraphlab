@@ -1,0 +1,46 @@
+ETW CPU stack summary (Od)
+Counts are weighted by the xperf SampledProfile Count field; folded paths preserve observed Stack No. ordering.
+Benchmark PID: 31200
+Measured workload window (UTC Unix microseconds): 1794908506468701 .. 1794908514520202
+
+inclusive  self  percent  function
+     8026     0   99.70%  benchmark.exe!__scrt_common_main_seh
+     8026     0   99.70%  benchmark.exe!main
+     8026     0   99.70%  kernel32.dll!0x00007ffcfb55dda7
+     8026     0   99.70%  ntdll.dll!0x00007ffcfbd59c5c
+     5918   103   73.52%  benchmark.exe!make_data
+     5706    84   70.88%  benchmark.exe!std::uniform_int_distribution<int>::operator()<std::mersenne_twister_engine<unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253> >
+     5622  1212   69.84%  benchmark.exe!std::uniform_int_distribution<int>::_Eval<std::mersenne_twister_engine<unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253> >
+     3013   322   37.43%  benchmark.exe!std::_Rng_from_urng_v2<unsigned int:std::mersenne_twister_engine<unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253> >::operator()
+     2691   323   33.43%  benchmark.exe!std::_Rng_from_urng_v2<unsigned int:std::mersenne_twister_engine<unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253> >::_Get_random_product
+     2368   345   29.42%  benchmark.exe!std::_Rng_from_urng_v2<unsigned int:std::mersenne_twister_engine<unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253> >::_Get_bits
+     2071     0   25.73%  benchmark.exe!sequential_min
+     2070  2069   25.71%  benchmark.exe!`anonymous namespace'::_Sorting::_Minmax_element_impl<1:`anonymous namespace'::_Sorting::_Traits_4_avx>
+     2070     0   25.71%  benchmark.exe!std::_Min_element_unchecked<int const *:std::less<void> >
+     2070     0   25.71%  benchmark.exe!std::_Min_element_vectorized<int const >
+     2070     0   25.71%  benchmark.exe!std::min_element<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<int> > > >
+     2070     0   25.71%  benchmark.exe!std::min_element<std::_Vector_const_iterator<std::_Vector_val<std::_Simple_types<int> > >:std::less<void> >
+     2023   200   25.13%  benchmark.exe!std::mersenne_twister_engine<unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253>::operator()
+      948   948   11.78%  benchmark.exe!std::uniform_int_distribution<int>::_Adjust
+      945   945   11.74%  benchmark.exe!std::mersenne_twister_engine<unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253>::_Refill_upper
+      877   877   10.89%  benchmark.exe!std::mersenne_twister_engine<unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253>::_Refill_lower
+      449   449    5.58%  benchmark.exe!std::_Rng_from_urng_v2<unsigned int:std::mersenne_twister_engine<unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253> >::_Rng_from_urng_v2<unsigned int:std::mersenne_twister_engine<unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253> >
+      109     0    1.35%  benchmark.exe!std::_Uninitialized_value_construct_n<std::allocator<int> >
+      109     0    1.35%  benchmark.exe!std::_Zero_range<int *>
+      109     0    1.35%  benchmark.exe!std::vector<int:std::allocator<int> >::_Construct_n<>
+      109     0    1.35%  benchmark.exe!std::vector<int:std::allocator<int> >::vector<int:std::allocator<int> >
+       76    22    0.94%  vcruntime140.dll!0x00007ffcdf52e783
+       43     0    0.53%  ntoskrnl.exe!0xfffff80079ccb05b
+       42     0    0.52%  ntoskrnl.exe!0xfffff800798aa85e
+       40     0    0.50%  ntoskrnl.exe!0xfffff80079826cff
+       40     0    0.50%  ntoskrnl.exe!0xfffff8007982adea
+       37     0    0.46%  benchmark.exe!std::_Deallocate<16>
+       37     0    0.46%  benchmark.exe!std::allocator<int>::deallocate
+       37     0    0.46%  benchmark.exe!std::vector<int:std::allocator<int> >::_Tidy
+       37     0    0.46%  benchmark.exe!std::vector<int:std::allocator<int> >::operator=
+       37     0    0.46%  ntdll.dll!0x00007ffcfbcb7850
+       37     0    0.46%  ntdll.dll!0x00007ffcfbce41c9
+       37     0    0.46%  ntdll.dll!0x00007ffcfbcf8b9f
+       37     0    0.46%  ntdll.dll!0x00007ffcfbdf67a4
+       37     0    0.46%  ntoskrnl.exe!0xfffff80079a1928b
+       37     0    0.46%  ntoskrnl.exe!0xfffff80079a1946a

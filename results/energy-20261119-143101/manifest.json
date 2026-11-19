@@ -1,0 +1,38 @@
+﻿{
+    "schema_version":  1,
+    "sensor_scope":  "cpu_package",
+    "expected_sensor":  "CPU Package Power [W]",
+    "sensor_log":  "hwinfo.csv",
+    "timestamp_timezone":  "FLE Standard Time",
+    "timestamp_utc_offset":  "+02:00",
+    "parameters":  {
+                       "batches":  200,
+                       "idle_seconds":  20,
+                       "runs":  1,
+                       "repeats":  100,
+                       "n":  10000000
+                   },
+    "records":  [
+                    {
+                        "config":  "Od",
+                        "run":  1,
+                        "child_file":  "Od-1-child.json",
+                        "baseline_start_unix_us":  1795091623938989,
+                        "baseline_end_unix_us":  1795091643962340,
+                        "start_unix_us":  1795091643970791,
+                        "end_unix_us":  1795091684732162,
+                        "workload_s":  40.761366700
+                    },
+                    {
+                        "config":  "O2",
+                        "run":  1,
+                        "child_file":  "O2-1-child.json",
+                        "baseline_start_unix_us":  1795091684802331,
+                        "baseline_end_unix_us":  1795091704806236,
+                        "start_unix_us":  1795091704814500,
+                        "end_unix_us":  1795091722164996,
+                        "workload_s":  17.350490800
+                    }
+                ],
+    "energy_measurement_status":  "awaiting_sensor_log_analysis"
+}

@@ -1,0 +1,799 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1200 672" width="100%" role="img" aria-label="Sampled stack flamegraph">
+<style>text{font-family:Segoe UI,Arial,sans-serif}.frame{cursor:default}.frame rect{stroke:#fff;stroke-width:.7}.frame:hover rect{stroke:#111;stroke-width:1.5}.label{font-size:11px;fill:#111;stroke:none;pointer-events:none}.toolbar{font-size:14px}</style>
+<text x="8" y="19" class="toolbar">ETW CPU flamegraph | 3156 weighted workload-window samples | search highlights matching frames</text>
+<foreignObject x="8" y="30" width="280" height="30"><body xmlns="http://www.w3.org/1999/xhtml" style="margin:0"><input id="search" placeholder="Search frames" oninput="searchFrames(this.value)" style="width:260px;padding:4px"/></body></foreignObject>
+<g id="flames" transform="translate(0,70)">
+<g class="frame" data-name="ntdll.dll!0x00007ffcfbd59c5c" data-x="0.000" data-y="550" data-w="1196.578" data-depth="0">
+<title>ntdll.dll!0x00007ffcfbd59c5c
+Inclusive samples: 3147 (99.71%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c</title><rect x="0.000" y="550" width="1196.578" height="21" rx="2" fill="hsl(23, 78%, 84%)"/>
+<text class="label" x="4.000" y="565">ntdll.dll!0x00007ffcfbd59c5c</text>
+</g>
+<g class="frame" data-name="kernel32.dll!0x00007ffcfb55dda7" data-x="0.000" data-y="528" data-w="1196.578" data-depth="1">
+<title>kernel32.dll!0x00007ffcfb55dda7
+Inclusive samples: 3147 (99.71%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7</title><rect x="0.000" y="528" width="1196.578" height="21" rx="2" fill="hsl(10, 78%, 90%)"/>
+<text class="label" x="4.000" y="543">kernel32.dll!0x00007ffcfb55dda7</text>
+</g>
+<g class="frame" data-name="benchmark.exe!__scrt_common_main_seh" data-x="0.000" data-y="506" data-w="1196.578" data-depth="2">
+<title>benchmark.exe!__scrt_common_main_seh
+Inclusive samples: 3147 (99.71%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh</title><rect x="0.000" y="506" width="1196.578" height="21" rx="2" fill="hsl(28, 78%, 88%)"/>
+<text class="label" x="4.000" y="521">benchmark.exe!__scrt_common_main_seh</text>
+</g>
+<g class="frame" data-name="benchmark.exe!main" data-x="0.000" data-y="484" data-w="1196.578" data-depth="3">
+<title>benchmark.exe!main
+Inclusive samples: 3147 (99.71%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main</title><rect x="0.000" y="484" width="1196.578" height="21" rx="2" fill="hsl(20, 78%, 90%)"/>
+<text class="label" x="4.000" y="499">benchmark.exe!main</text>
+</g>
+<g class="frame" data-name="benchmark.exe!sequential_min" data-x="0.000" data-y="462" data-w="790.875" data-depth="4">
+<title>benchmark.exe!sequential_min
+Inclusive samples: 2080 (65.91%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!sequential_min</title><rect x="0.000" y="462" width="790.875" height="21" rx="2" fill="hsl(33, 78%, 88%)"/>
+<text class="label" x="4.000" y="477">benchmark.exe!sequential_min</text>
+</g>
+<g class="frame" data-name="benchmark.exe!`anonymous namespace&#x27;::_sorting::_minmax_element_impl&lt;1:`anonymous namespace&#x27;::_sorting::_traits_4_avx&gt;" data-x="0.000" data-y="440" data-w="790.875" data-depth="5">
+<title>benchmark.exe!`anonymous namespace&#x27;::_Sorting::_Minmax_element_impl&lt;1:`anonymous namespace&#x27;::_Sorting::_Traits_4_avx&gt;
+Inclusive samples: 2080 (65.91%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!sequential_min;benchmark.exe!`anonymous namespace&#x27;::_Sorting::_Minmax_element_impl&lt;1:`anonymous namespace&#x27;::_Sorting::_Traits_4_avx&gt;</title><rect x="0.000" y="440" width="790.875" height="21" rx="2" fill="hsl(0, 78%, 82%)"/>
+<text class="label" x="4.000" y="455">benchmark.exe!`anonymous namespace&#x27;::_Sorting::_Minmax_element_impl&lt;1:`anonymous namespace&#x27;::_Sorting::_Traits_4_avx&gt;</text>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079cbe754" data-x="0.000" data-y="418" data-w="0.380" data-depth="6">
+<title>ntoskrnl.exe!0xfffff80079cbe754
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!sequential_min;benchmark.exe!`anonymous namespace&#x27;::_Sorting::_Minmax_element_impl&lt;1:`anonymous namespace&#x27;::_Sorting::_Traits_4_avx&gt;;ntoskrnl.exe!0xfffff80079cbe754</title><rect x="0.000" y="418" width="0.380" height="21" rx="2" fill="hsl(9, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079cc33cb" data-x="0.000" data-y="396" data-w="0.380" data-depth="7">
+<title>ntoskrnl.exe!0xfffff80079cc33cb
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!sequential_min;benchmark.exe!`anonymous namespace&#x27;::_Sorting::_Minmax_element_impl&lt;1:`anonymous namespace&#x27;::_Sorting::_Traits_4_avx&gt;;ntoskrnl.exe!0xfffff80079cbe754;ntoskrnl.exe!0xfffff80079cc33cb</title><rect x="0.000" y="396" width="0.380" height="21" rx="2" fill="hsl(8, 78%, 88%)"/>
+</g>
+<g class="frame" data-name="benchmark.exe!make_data" data-x="790.875" data-y="462" data-w="393.916" data-depth="4">
+<title>benchmark.exe!make_data
+Inclusive samples: 1036 (32.83%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data</title><rect x="790.875" y="462" width="393.916" height="21" rx="2" fill="hsl(20, 78%, 88%)"/>
+<text class="label" x="794.875" y="477">benchmark.exe!make_data</text>
+</g>
+<g class="frame" data-name="benchmark.exe!std::_rng_from_urng_v2&lt;unsigned int:std::mersenne_twister_engine&lt;unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253&gt; &gt;::_get_bits" data-x="790.875" data-y="440" data-w="299.620" data-depth="5">
+<title>benchmark.exe!std::_Rng_from_urng_v2&lt;unsigned int:std::mersenne_twister_engine&lt;unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253&gt; &gt;::_Get_bits
+Inclusive samples: 788 (24.97%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::_Rng_from_urng_v2&lt;unsigned int:std::mersenne_twister_engine&lt;unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253&gt; &gt;::_Get_bits</title><rect x="790.875" y="440" width="299.620" height="21" rx="2" fill="hsl(29, 78%, 82%)"/>
+<text class="label" x="794.875" y="455">benchmark.exe!std::_Rng_from_urng_v2&lt;unsign?</text>
+</g>
+<g class="frame" data-name="benchmark.exe!std::mersenne_twister_engine&lt;unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253&gt;::_refill_lower" data-x="790.875" data-y="418" data-w="57.034" data-depth="6">
+<title>benchmark.exe!std::mersenne_twister_engine&lt;unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253&gt;::_Refill_lower
+Inclusive samples: 150 (4.75%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::_Rng_from_urng_v2&lt;unsigned int:std::mersenne_twister_engine&lt;unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253&gt; &gt;::_Get_bits;benchmark.exe!std::mersenne_twister_engine&lt;unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253&gt;::_Refill_lower</title><rect x="790.875" y="418" width="57.034" height="21" rx="2" fill="hsl(18, 78%, 89%)"/>
+<text class="label" x="794.875" y="433">benchm?</text>
+</g>
+<g class="frame" data-name="benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;" data-x="1090.494" data-y="440" data-w="41.065" data-depth="5">
+<title>benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;
+Inclusive samples: 108 (3.42%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;</title><rect x="1090.494" y="440" width="41.065" height="21" rx="2" fill="hsl(18, 78%, 83%)"/>
+<text class="label" x="1094.494" y="455">benc?</text>
+</g>
+<g class="frame" data-name="vcruntime140.dll!0x00007ffcdf52e783" data-x="1090.494" data-y="418" data-w="23.574" data-depth="6">
+<title>vcruntime140.dll!0x00007ffcdf52e783
+Inclusive samples: 62 (1.96%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783</title><rect x="1090.494" y="418" width="23.574" height="21" rx="2" fill="hsl(20, 78%, 83%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079ccb05b" data-x="1090.494" data-y="396" data-w="13.308" data-depth="7">
+<title>ntoskrnl.exe!0xfffff80079ccb05b
+Inclusive samples: 35 (1.11%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b</title><rect x="1090.494" y="396" width="13.308" height="21" rx="2" fill="hsl(34, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798aa85e" data-x="1090.494" data-y="374" data-w="12.928" data-depth="8">
+<title>ntoskrnl.exe!0xfffff800798aa85e
+Inclusive samples: 34 (1.08%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e</title><rect x="1090.494" y="374" width="12.928" height="21" rx="2" fill="hsl(9, 78%, 83%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079826cff" data-x="1090.494" data-y="352" data-w="12.167" data-depth="9">
+<title>ntoskrnl.exe!0xfffff80079826cff
+Inclusive samples: 32 (1.01%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff</title><rect x="1090.494" y="352" width="12.167" height="21" rx="2" fill="hsl(20, 78%, 83%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007982adea" data-x="1090.494" data-y="330" data-w="11.407" data-depth="10">
+<title>ntoskrnl.exe!0xfffff8007982adea
+Inclusive samples: 30 (0.95%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea</title><rect x="1090.494" y="330" width="11.407" height="21" rx="2" fill="hsl(0, 78%, 87%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007982cf55" data-x="1090.494" data-y="308" data-w="5.703" data-depth="11">
+<title>ntoskrnl.exe!0xfffff8007982cf55
+Inclusive samples: 15 (0.48%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55</title><rect x="1090.494" y="308" width="5.703" height="21" rx="2" fill="hsl(0, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007982d6f3" data-x="1090.494" data-y="286" data-w="5.323" data-depth="12">
+<title>ntoskrnl.exe!0xfffff8007982d6f3
+Inclusive samples: 14 (0.44%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3</title><rect x="1090.494" y="286" width="5.323" height="21" rx="2" fill="hsl(22, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007981b203" data-x="1090.494" data-y="264" data-w="4.183" data-depth="13">
+<title>ntoskrnl.exe!0xfffff8007981b203
+Inclusive samples: 11 (0.35%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b203</title><rect x="1090.494" y="264" width="4.183" height="21" rx="2" fill="hsl(35, 78%, 82%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007981ab72" data-x="1090.494" data-y="242" data-w="1.521" data-depth="14">
+<title>ntoskrnl.exe!0xfffff8007981ab72
+Inclusive samples: 4 (0.13%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b203;ntoskrnl.exe!0xfffff8007981ab72</title><rect x="1090.494" y="242" width="1.521" height="21" rx="2" fill="hsl(32, 78%, 82%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007981ac7f" data-x="1092.015" data-y="242" data-w="1.141" data-depth="14">
+<title>ntoskrnl.exe!0xfffff8007981ac7f
+Inclusive samples: 3 (0.10%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b203;ntoskrnl.exe!0xfffff8007981ac7f</title><rect x="1092.015" y="242" width="1.141" height="21" rx="2" fill="hsl(23, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007981abdc" data-x="1093.156" data-y="242" data-w="0.760" data-depth="14">
+<title>ntoskrnl.exe!0xfffff8007981abdc
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b203;ntoskrnl.exe!0xfffff8007981abdc</title><rect x="1093.156" y="242" width="0.760" height="21" rx="2" fill="hsl(4, 78%, 83%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007981ac49" data-x="1093.916" data-y="242" data-w="0.760" data-depth="14">
+<title>ntoskrnl.exe!0xfffff8007981ac49
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b203;ntoskrnl.exe!0xfffff8007981ac49</title><rect x="1093.916" y="242" width="0.760" height="21" rx="2" fill="hsl(13, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007981b1e0" data-x="1094.677" data-y="264" data-w="1.141" data-depth="13">
+<title>ntoskrnl.exe!0xfffff8007981b1e0
+Inclusive samples: 3 (0.10%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b1e0</title><rect x="1094.677" y="264" width="1.141" height="21" rx="2" fill="hsl(10, 78%, 83%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007981b4dc" data-x="1094.677" data-y="242" data-w="1.141" data-depth="14">
+<title>ntoskrnl.exe!0xfffff8007981b4dc
+Inclusive samples: 3 (0.10%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b1e0;ntoskrnl.exe!0xfffff8007981b4dc</title><rect x="1094.677" y="242" width="1.141" height="21" rx="2" fill="hsl(9, 78%, 83%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798b420f" data-x="1094.677" data-y="220" data-w="0.760" data-depth="15">
+<title>ntoskrnl.exe!0xfffff800798b420f
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b1e0;ntoskrnl.exe!0xfffff8007981b4dc;ntoskrnl.exe!0xfffff800798b420f</title><rect x="1094.677" y="220" width="0.760" height="21" rx="2" fill="hsl(23, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798b640f" data-x="1094.677" data-y="198" data-w="0.760" data-depth="16">
+<title>ntoskrnl.exe!0xfffff800798b640f
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b1e0;ntoskrnl.exe!0xfffff8007981b4dc;ntoskrnl.exe!0xfffff800798b420f;ntoskrnl.exe!0xfffff800798b640f</title><rect x="1094.677" y="198" width="0.760" height="21" rx="2" fill="hsl(19, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798b54f4" data-x="1094.677" data-y="176" data-w="0.380" data-depth="17">
+<title>ntoskrnl.exe!0xfffff800798b54f4
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b1e0;ntoskrnl.exe!0xfffff8007981b4dc;ntoskrnl.exe!0xfffff800798b420f;ntoskrnl.exe!0xfffff800798b640f;ntoskrnl.exe!0xfffff800798b54f4</title><rect x="1094.677" y="176" width="0.380" height="21" rx="2" fill="hsl(28, 78%, 82%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800799b9a73" data-x="1094.677" data-y="154" data-w="0.380" data-depth="18">
+<title>ntoskrnl.exe!0xfffff800799b9a73
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b1e0;ntoskrnl.exe!0xfffff8007981b4dc;ntoskrnl.exe!0xfffff800798b420f;ntoskrnl.exe!0xfffff800798b640f;ntoskrnl.exe!0xfffff800798b54f4;ntoskrnl.exe!0xfffff800799b9a73</title><rect x="1094.677" y="154" width="0.380" height="21" rx="2" fill="hsl(14, 78%, 82%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798b5684" data-x="1095.057" data-y="176" data-w="0.380" data-depth="17">
+<title>ntoskrnl.exe!0xfffff800798b5684
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b1e0;ntoskrnl.exe!0xfffff8007981b4dc;ntoskrnl.exe!0xfffff800798b420f;ntoskrnl.exe!0xfffff800798b640f;ntoskrnl.exe!0xfffff800798b5684</title><rect x="1095.057" y="176" width="0.380" height="21" rx="2" fill="hsl(24, 78%, 82%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798344df" data-x="1095.057" data-y="154" data-w="0.380" data-depth="18">
+<title>ntoskrnl.exe!0xfffff800798344df
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b1e0;ntoskrnl.exe!0xfffff8007981b4dc;ntoskrnl.exe!0xfffff800798b420f;ntoskrnl.exe!0xfffff800798b640f;ntoskrnl.exe!0xfffff800798b5684;ntoskrnl.exe!0xfffff800798344df</title><rect x="1095.057" y="154" width="0.380" height="21" rx="2" fill="hsl(10, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798b4144" data-x="1095.437" data-y="220" data-w="0.380" data-depth="15">
+<title>ntoskrnl.exe!0xfffff800798b4144
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b1e0;ntoskrnl.exe!0xfffff8007981b4dc;ntoskrnl.exe!0xfffff800798b4144</title><rect x="1095.437" y="220" width="0.380" height="21" rx="2" fill="hsl(32, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798b51ad" data-x="1095.437" data-y="198" data-w="0.380" data-depth="16">
+<title>ntoskrnl.exe!0xfffff800798b51ad
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b1e0;ntoskrnl.exe!0xfffff8007981b4dc;ntoskrnl.exe!0xfffff800798b4144;ntoskrnl.exe!0xfffff800798b51ad</title><rect x="1095.437" y="198" width="0.380" height="21" rx="2" fill="hsl(20, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798b54c3" data-x="1095.437" data-y="176" data-w="0.380" data-depth="17">
+<title>ntoskrnl.exe!0xfffff800798b54c3
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b1e0;ntoskrnl.exe!0xfffff8007981b4dc;ntoskrnl.exe!0xfffff800798b4144;ntoskrnl.exe!0xfffff800798b51ad;ntoskrnl.exe!0xfffff800798b54c3</title><rect x="1095.437" y="176" width="0.380" height="21" rx="2" fill="hsl(12, 78%, 88%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079cd1b6e" data-x="1095.437" data-y="154" data-w="0.380" data-depth="18">
+<title>ntoskrnl.exe!0xfffff80079cd1b6e
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d6f3;ntoskrnl.exe!0xfffff8007981b1e0;ntoskrnl.exe!0xfffff8007981b4dc;ntoskrnl.exe!0xfffff800798b4144;ntoskrnl.exe!0xfffff800798b51ad;ntoskrnl.exe!0xfffff800798b54c3;ntoskrnl.exe!0xfffff80079cd1b6e</title><rect x="1095.437" y="154" width="0.380" height="21" rx="2" fill="hsl(4, 78%, 88%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007982d3e4" data-x="1095.817" data-y="286" data-w="0.380" data-depth="12">
+<title>ntoskrnl.exe!0xfffff8007982d3e4
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d3e4</title><rect x="1095.817" y="286" width="0.380" height="21" rx="2" fill="hsl(23, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798b4402" data-x="1095.817" data-y="264" data-w="0.380" data-depth="13">
+<title>ntoskrnl.exe!0xfffff800798b4402
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d3e4;ntoskrnl.exe!0xfffff800798b4402</title><rect x="1095.817" y="264" width="0.380" height="21" rx="2" fill="hsl(17, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079cb6a2d" data-x="1095.817" data-y="242" data-w="0.380" data-depth="14">
+<title>ntoskrnl.exe!0xfffff80079cb6a2d
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf55;ntoskrnl.exe!0xfffff8007982d3e4;ntoskrnl.exe!0xfffff800798b4402;ntoskrnl.exe!0xfffff80079cb6a2d</title><rect x="1095.817" y="242" width="0.380" height="21" rx="2" fill="hsl(23, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007982cf8e" data-x="1096.198" data-y="308" data-w="5.703" data-depth="11">
+<title>ntoskrnl.exe!0xfffff8007982cf8e
+Inclusive samples: 15 (0.48%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf8e</title><rect x="1096.198" y="308" width="5.703" height="21" rx="2" fill="hsl(5, 78%, 82%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007982e18c" data-x="1096.198" data-y="286" data-w="3.802" data-depth="12">
+<title>ntoskrnl.exe!0xfffff8007982e18c
+Inclusive samples: 10 (0.32%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf8e;ntoskrnl.exe!0xfffff8007982e18c</title><rect x="1096.198" y="286" width="3.802" height="21" rx="2" fill="hsl(12, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007982f255" data-x="1096.198" data-y="264" data-w="1.141" data-depth="13">
+<title>ntoskrnl.exe!0xfffff8007982f255
+Inclusive samples: 3 (0.10%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf8e;ntoskrnl.exe!0xfffff8007982e18c;ntoskrnl.exe!0xfffff8007982f255</title><rect x="1096.198" y="264" width="1.141" height="21" rx="2" fill="hsl(33, 78%, 87%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007982f32f" data-x="1097.338" data-y="264" data-w="1.141" data-depth="13">
+<title>ntoskrnl.exe!0xfffff8007982f32f
+Inclusive samples: 3 (0.10%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf8e;ntoskrnl.exe!0xfffff8007982e18c;ntoskrnl.exe!0xfffff8007982f32f</title><rect x="1097.338" y="264" width="1.141" height="21" rx="2" fill="hsl(4, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007982f1e4" data-x="1098.479" data-y="264" data-w="0.760" data-depth="13">
+<title>ntoskrnl.exe!0xfffff8007982f1e4
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf8e;ntoskrnl.exe!0xfffff8007982e18c;ntoskrnl.exe!0xfffff8007982f1e4</title><rect x="1098.479" y="264" width="0.760" height="21" rx="2" fill="hsl(15, 78%, 88%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007982f1fc" data-x="1099.240" data-y="264" data-w="0.380" data-depth="13">
+<title>ntoskrnl.exe!0xfffff8007982f1fc
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf8e;ntoskrnl.exe!0xfffff8007982e18c;ntoskrnl.exe!0xfffff8007982f1fc</title><rect x="1099.240" y="264" width="0.380" height="21" rx="2" fill="hsl(1, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007982f368" data-x="1099.620" data-y="264" data-w="0.380" data-depth="13">
+<title>ntoskrnl.exe!0xfffff8007982f368
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf8e;ntoskrnl.exe!0xfffff8007982e18c;ntoskrnl.exe!0xfffff8007982f368</title><rect x="1099.620" y="264" width="0.380" height="21" rx="2" fill="hsl(14, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007982e367" data-x="1100.000" data-y="286" data-w="1.141" data-depth="12">
+<title>ntoskrnl.exe!0xfffff8007982e367
+Inclusive samples: 3 (0.10%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf8e;ntoskrnl.exe!0xfffff8007982e367</title><rect x="1100.000" y="286" width="1.141" height="21" rx="2" fill="hsl(20, 78%, 85%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079830420" data-x="1100.000" data-y="264" data-w="0.380" data-depth="13">
+<title>ntoskrnl.exe!0xfffff80079830420
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf8e;ntoskrnl.exe!0xfffff8007982e367;ntoskrnl.exe!0xfffff80079830420</title><rect x="1100.000" y="264" width="0.380" height="21" rx="2" fill="hsl(14, 78%, 87%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079830437" data-x="1100.380" data-y="264" data-w="0.380" data-depth="13">
+<title>ntoskrnl.exe!0xfffff80079830437
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf8e;ntoskrnl.exe!0xfffff8007982e367;ntoskrnl.exe!0xfffff80079830437</title><rect x="1100.380" y="264" width="0.380" height="21" rx="2" fill="hsl(2, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079830476" data-x="1100.760" data-y="264" data-w="0.380" data-depth="13">
+<title>ntoskrnl.exe!0xfffff80079830476
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf8e;ntoskrnl.exe!0xfffff8007982e367;ntoskrnl.exe!0xfffff80079830476</title><rect x="1100.760" y="264" width="0.380" height="21" rx="2" fill="hsl(25, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007982e024" data-x="1101.141" data-y="286" data-w="0.380" data-depth="12">
+<title>ntoskrnl.exe!0xfffff8007982e024
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf8e;ntoskrnl.exe!0xfffff8007982e024</title><rect x="1101.141" y="286" width="0.380" height="21" rx="2" fill="hsl(28, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007982e349" data-x="1101.521" data-y="286" data-w="0.380" data-depth="12">
+<title>ntoskrnl.exe!0xfffff8007982e349
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982adea;ntoskrnl.exe!0xfffff8007982cf8e;ntoskrnl.exe!0xfffff8007982e349</title><rect x="1101.521" y="286" width="0.380" height="21" rx="2" fill="hsl(16, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007982a827" data-x="1101.901" data-y="330" data-w="0.380" data-depth="10">
+<title>ntoskrnl.exe!0xfffff8007982a827
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982a827</title><rect x="1101.901" y="330" width="0.380" height="21" rx="2" fill="hsl(29, 78%, 83%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007982ac61" data-x="1102.281" data-y="330" data-w="0.380" data-depth="10">
+<title>ntoskrnl.exe!0xfffff8007982ac61
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826cff;ntoskrnl.exe!0xfffff8007982ac61</title><rect x="1102.281" y="330" width="0.380" height="21" rx="2" fill="hsl(14, 78%, 85%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079826b3a" data-x="1102.662" data-y="352" data-w="0.760" data-depth="9">
+<title>ntoskrnl.exe!0xfffff80079826b3a
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa85e;ntoskrnl.exe!0xfffff80079826b3a</title><rect x="1102.662" y="352" width="0.760" height="21" rx="2" fill="hsl(7, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798aa73a" data-x="1103.422" data-y="374" data-w="0.380" data-depth="8">
+<title>ntoskrnl.exe!0xfffff800798aa73a
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb05b;ntoskrnl.exe!0xfffff800798aa73a</title><rect x="1103.422" y="374" width="0.380" height="21" rx="2" fill="hsl(30, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079ccb02c" data-x="1103.802" data-y="396" data-w="4.563" data-depth="7">
+<title>ntoskrnl.exe!0xfffff80079ccb02c
+Inclusive samples: 12 (0.38%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e783;ntoskrnl.exe!0xfffff80079ccb02c</title><rect x="1103.802" y="396" width="4.563" height="21" rx="2" fill="hsl(18, 78%, 87%)"/>
+</g>
+<g class="frame" data-name="vcruntime140.dll!0x00007ffcdf52e77e" data-x="1114.068" data-y="418" data-w="6.464" data-depth="6">
+<title>vcruntime140.dll!0x00007ffcdf52e77e
+Inclusive samples: 17 (0.54%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e77e</title><rect x="1114.068" y="418" width="6.464" height="21" rx="2" fill="hsl(5, 78%, 82%)"/>
+</g>
+<g class="frame" data-name="vcruntime140.dll!0x00007ffcdf52e774" data-x="1120.532" data-y="418" data-w="3.422" data-depth="6">
+<title>vcruntime140.dll!0x00007ffcdf52e774
+Inclusive samples: 9 (0.29%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e774</title><rect x="1120.532" y="418" width="3.422" height="21" rx="2" fill="hsl(30, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="vcruntime140.dll!0x00007ffcdf52e779" data-x="1123.954" data-y="418" data-w="3.042" data-depth="6">
+<title>vcruntime140.dll!0x00007ffcdf52e779
+Inclusive samples: 8 (0.25%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e779</title><rect x="1123.954" y="418" width="3.042" height="21" rx="2" fill="hsl(5, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="vcruntime140.dll!0x00007ffcdf52e78b" data-x="1126.996" data-y="418" data-w="2.281" data-depth="6">
+<title>vcruntime140.dll!0x00007ffcdf52e78b
+Inclusive samples: 6 (0.19%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e78b</title><rect x="1126.996" y="418" width="2.281" height="21" rx="2" fill="hsl(7, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="vcruntime140.dll!0x00007ffcdf52e793" data-x="1129.278" data-y="418" data-w="1.141" data-depth="6">
+<title>vcruntime140.dll!0x00007ffcdf52e793
+Inclusive samples: 3 (0.10%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e793</title><rect x="1129.278" y="418" width="1.141" height="21" rx="2" fill="hsl(9, 78%, 85%)"/>
+</g>
+<g class="frame" data-name="benchmark.exe!operator new" data-x="1130.418" data-y="418" data-w="0.760" data-depth="6">
+<title>benchmark.exe!operator new
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;benchmark.exe!operator new</title><rect x="1130.418" y="418" width="0.760" height="21" rx="2" fill="hsl(23, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ucrtbase.dll!0x00007ffcf92450d9" data-x="1130.418" data-y="396" data-w="0.760" data-depth="7">
+<title>ucrtbase.dll!0x00007ffcf92450d9
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;benchmark.exe!operator new;ucrtbase.dll!0x00007ffcf92450d9</title><rect x="1130.418" y="396" width="0.760" height="21" rx="2" fill="hsl(24, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntdll.dll!0x00007ffcfbcc1cfb" data-x="1130.418" data-y="374" data-w="0.760" data-depth="8">
+<title>ntdll.dll!0x00007ffcfbcc1cfb
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;benchmark.exe!operator new;ucrtbase.dll!0x00007ffcf92450d9;ntdll.dll!0x00007ffcfbcc1cfb</title><rect x="1130.418" y="374" width="0.760" height="21" rx="2" fill="hsl(34, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntdll.dll!0x00007ffcfbce572d" data-x="1130.418" data-y="352" data-w="0.760" data-depth="9">
+<title>ntdll.dll!0x00007ffcfbce572d
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;benchmark.exe!operator new;ucrtbase.dll!0x00007ffcf92450d9;ntdll.dll!0x00007ffcfbcc1cfb;ntdll.dll!0x00007ffcfbce572d</title><rect x="1130.418" y="352" width="0.760" height="21" rx="2" fill="hsl(18, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntdll.dll!0x00007ffcfbd26857" data-x="1130.418" data-y="330" data-w="0.760" data-depth="10">
+<title>ntdll.dll!0x00007ffcfbd26857
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;benchmark.exe!operator new;ucrtbase.dll!0x00007ffcf92450d9;ntdll.dll!0x00007ffcfbcc1cfb;ntdll.dll!0x00007ffcfbce572d;ntdll.dll!0x00007ffcfbd26857</title><rect x="1130.418" y="330" width="0.760" height="21" rx="2" fill="hsl(32, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntdll.dll!0x00007ffcfbcf75a6" data-x="1130.418" data-y="308" data-w="0.760" data-depth="11">
+<title>ntdll.dll!0x00007ffcfbcf75a6
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;benchmark.exe!operator new;ucrtbase.dll!0x00007ffcf92450d9;ntdll.dll!0x00007ffcfbcc1cfb;ntdll.dll!0x00007ffcfbce572d;ntdll.dll!0x00007ffcfbd26857;ntdll.dll!0x00007ffcfbcf75a6</title><rect x="1130.418" y="308" width="0.760" height="21" rx="2" fill="hsl(34, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntdll.dll!0x00007ffcfbdf66e4" data-x="1130.418" data-y="286" data-w="0.760" data-depth="12">
+<title>ntdll.dll!0x00007ffcfbdf66e4
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;benchmark.exe!operator new;ucrtbase.dll!0x00007ffcf92450d9;ntdll.dll!0x00007ffcfbcc1cfb;ntdll.dll!0x00007ffcfbce572d;ntdll.dll!0x00007ffcfbd26857;ntdll.dll!0x00007ffcfbcf75a6;ntdll.dll!0x00007ffcfbdf66e4</title><rect x="1130.418" y="286" width="0.760" height="21" rx="2" fill="hsl(19, 78%, 87%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079ccf528" data-x="1130.418" data-y="264" data-w="0.760" data-depth="13">
+<title>ntoskrnl.exe!0xfffff80079ccf528
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;benchmark.exe!operator new;ucrtbase.dll!0x00007ffcf92450d9;ntdll.dll!0x00007ffcfbcc1cfb;ntdll.dll!0x00007ffcfbce572d;ntdll.dll!0x00007ffcfbd26857;ntdll.dll!0x00007ffcfbcf75a6;ntdll.dll!0x00007ffcfbdf66e4;ntoskrnl.exe!0xfffff80079ccf528</title><rect x="1130.418" y="264" width="0.760" height="21" rx="2" fill="hsl(20, 78%, 87%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079f47443" data-x="1130.418" data-y="242" data-w="0.380" data-depth="14">
+<title>ntoskrnl.exe!0xfffff80079f47443
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;benchmark.exe!operator new;ucrtbase.dll!0x00007ffcf92450d9;ntdll.dll!0x00007ffcfbcc1cfb;ntdll.dll!0x00007ffcfbce572d;ntdll.dll!0x00007ffcfbd26857;ntdll.dll!0x00007ffcfbcf75a6;ntdll.dll!0x00007ffcfbdf66e4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f47443</title><rect x="1130.418" y="242" width="0.380" height="21" rx="2" fill="hsl(25, 78%, 87%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079f47a0f" data-x="1130.418" data-y="220" data-w="0.380" data-depth="15">
+<title>ntoskrnl.exe!0xfffff80079f47a0f
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;benchmark.exe!operator new;ucrtbase.dll!0x00007ffcf92450d9;ntdll.dll!0x00007ffcfbcc1cfb;ntdll.dll!0x00007ffcfbce572d;ntdll.dll!0x00007ffcfbd26857;ntdll.dll!0x00007ffcfbcf75a6;ntdll.dll!0x00007ffcfbdf66e4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f47443;ntoskrnl.exe!0xfffff80079f47a0f</title><rect x="1130.418" y="220" width="0.380" height="21" rx="2" fill="hsl(25, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079f4748f" data-x="1130.798" data-y="242" data-w="0.380" data-depth="14">
+<title>ntoskrnl.exe!0xfffff80079f4748f
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;benchmark.exe!operator new;ucrtbase.dll!0x00007ffcf92450d9;ntdll.dll!0x00007ffcfbcc1cfb;ntdll.dll!0x00007ffcfbce572d;ntdll.dll!0x00007ffcfbd26857;ntdll.dll!0x00007ffcfbcf75a6;ntdll.dll!0x00007ffcfbdf66e4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f4748f</title><rect x="1130.798" y="242" width="0.380" height="21" rx="2" fill="hsl(34, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079f48409" data-x="1130.798" data-y="220" data-w="0.380" data-depth="15">
+<title>ntoskrnl.exe!0xfffff80079f48409
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;benchmark.exe!operator new;ucrtbase.dll!0x00007ffcf92450d9;ntdll.dll!0x00007ffcfbcc1cfb;ntdll.dll!0x00007ffcfbce572d;ntdll.dll!0x00007ffcfbd26857;ntdll.dll!0x00007ffcfbcf75a6;ntdll.dll!0x00007ffcfbdf66e4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f4748f;ntoskrnl.exe!0xfffff80079f48409</title><rect x="1130.798" y="220" width="0.380" height="21" rx="2" fill="hsl(24, 78%, 87%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079f48d00" data-x="1130.798" data-y="198" data-w="0.380" data-depth="16">
+<title>ntoskrnl.exe!0xfffff80079f48d00
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;benchmark.exe!operator new;ucrtbase.dll!0x00007ffcf92450d9;ntdll.dll!0x00007ffcfbcc1cfb;ntdll.dll!0x00007ffcfbce572d;ntdll.dll!0x00007ffcfbd26857;ntdll.dll!0x00007ffcfbcf75a6;ntdll.dll!0x00007ffcfbdf66e4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f4748f;ntoskrnl.exe!0xfffff80079f48409;ntoskrnl.exe!0xfffff80079f48d00</title><rect x="1130.798" y="198" width="0.380" height="21" rx="2" fill="hsl(19, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079f08e92" data-x="1130.798" data-y="176" data-w="0.380" data-depth="17">
+<title>ntoskrnl.exe!0xfffff80079f08e92
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;benchmark.exe!operator new;ucrtbase.dll!0x00007ffcf92450d9;ntdll.dll!0x00007ffcfbcc1cfb;ntdll.dll!0x00007ffcfbce572d;ntdll.dll!0x00007ffcfbd26857;ntdll.dll!0x00007ffcfbcf75a6;ntdll.dll!0x00007ffcfbdf66e4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f4748f;ntoskrnl.exe!0xfffff80079f48409;ntoskrnl.exe!0xfffff80079f48d00;ntoskrnl.exe!0xfffff80079f08e92</title><rect x="1130.798" y="176" width="0.380" height="21" rx="2" fill="hsl(11, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079f09148" data-x="1130.798" data-y="154" data-w="0.380" data-depth="18">
+<title>ntoskrnl.exe!0xfffff80079f09148
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;benchmark.exe!operator new;ucrtbase.dll!0x00007ffcf92450d9;ntdll.dll!0x00007ffcfbcc1cfb;ntdll.dll!0x00007ffcfbce572d;ntdll.dll!0x00007ffcfbd26857;ntdll.dll!0x00007ffcfbcf75a6;ntdll.dll!0x00007ffcfbdf66e4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f4748f;ntoskrnl.exe!0xfffff80079f48409;ntoskrnl.exe!0xfffff80079f48d00;ntoskrnl.exe!0xfffff80079f08e92;ntoskrnl.exe!0xfffff80079f09148</title><rect x="1130.798" y="154" width="0.380" height="21" rx="2" fill="hsl(33, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079a1f377" data-x="1130.798" data-y="132" data-w="0.380" data-depth="19">
+<title>ntoskrnl.exe!0xfffff80079a1f377
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;benchmark.exe!operator new;ucrtbase.dll!0x00007ffcf92450d9;ntdll.dll!0x00007ffcfbcc1cfb;ntdll.dll!0x00007ffcfbce572d;ntdll.dll!0x00007ffcfbd26857;ntdll.dll!0x00007ffcfbcf75a6;ntdll.dll!0x00007ffcfbdf66e4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f4748f;ntoskrnl.exe!0xfffff80079f48409;ntoskrnl.exe!0xfffff80079f48d00;ntoskrnl.exe!0xfffff80079f08e92;ntoskrnl.exe!0xfffff80079f09148;ntoskrnl.exe!0xfffff80079a1f377</title><rect x="1130.798" y="132" width="0.380" height="21" rx="2" fill="hsl(30, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="vcruntime140.dll!0x00007ffcdf52e79b" data-x="1131.179" data-y="418" data-w="0.380" data-depth="6">
+<title>vcruntime140.dll!0x00007ffcdf52e79b
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;benchmark.exe!make_data;benchmark.exe!std::vector&lt;int:std::allocator&lt;int&gt; &gt;::vector&lt;int:std::allocator&lt;int&gt; &gt;;vcruntime140.dll!0x00007ffcdf52e79b</title><rect x="1131.179" y="418" width="0.380" height="21" rx="2" fill="hsl(22, 78%, 88%)"/>
+</g>
+<g class="frame" data-name="ucrtbase.dll!0x00007ffcf9252d7b" data-x="1184.791" data-y="462" data-w="11.787" data-depth="4">
+<title>ucrtbase.dll!0x00007ffcf9252d7b
+Inclusive samples: 31 (0.98%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b</title><rect x="1184.791" y="462" width="11.787" height="21" rx="2" fill="hsl(2, 78%, 85%)"/>
+</g>
+<g class="frame" data-name="ntdll.dll!0x00007ffcfbcb7850" data-x="1184.791" data-y="440" data-w="11.787" data-depth="5">
+<title>ntdll.dll!0x00007ffcfbcb7850
+Inclusive samples: 31 (0.98%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850</title><rect x="1184.791" y="440" width="11.787" height="21" rx="2" fill="hsl(35, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntdll.dll!0x00007ffcfbce41c9" data-x="1184.791" data-y="418" data-w="11.787" data-depth="6">
+<title>ntdll.dll!0x00007ffcfbce41c9
+Inclusive samples: 31 (0.98%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9</title><rect x="1184.791" y="418" width="11.787" height="21" rx="2" fill="hsl(35, 78%, 83%)"/>
+</g>
+<g class="frame" data-name="ntdll.dll!0x00007ffcfbcf8b9f" data-x="1184.791" data-y="396" data-w="11.787" data-depth="7">
+<title>ntdll.dll!0x00007ffcfbcf8b9f
+Inclusive samples: 31 (0.98%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f</title><rect x="1184.791" y="396" width="11.787" height="21" rx="2" fill="hsl(4, 78%, 83%)"/>
+</g>
+<g class="frame" data-name="ntdll.dll!0x00007ffcfbdf67a4" data-x="1184.791" data-y="374" data-w="11.787" data-depth="8">
+<title>ntdll.dll!0x00007ffcfbdf67a4
+Inclusive samples: 31 (0.98%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4</title><rect x="1184.791" y="374" width="11.787" height="21" rx="2" fill="hsl(8, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079ccf528" data-x="1184.791" data-y="352" data-w="11.787" data-depth="9">
+<title>ntoskrnl.exe!0xfffff80079ccf528
+Inclusive samples: 31 (0.98%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528</title><rect x="1184.791" y="352" width="11.787" height="21" rx="2" fill="hsl(20, 78%, 87%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079f448cd" data-x="1184.791" data-y="330" data-w="11.787" data-depth="10">
+<title>ntoskrnl.exe!0xfffff80079f448cd
+Inclusive samples: 31 (0.98%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd</title><rect x="1184.791" y="330" width="11.787" height="21" rx="2" fill="hsl(4, 78%, 83%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079f44aab" data-x="1184.791" data-y="308" data-w="11.787" data-depth="11">
+<title>ntoskrnl.exe!0xfffff80079f44aab
+Inclusive samples: 31 (0.98%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab</title><rect x="1184.791" y="308" width="11.787" height="21" rx="2" fill="hsl(35, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079f44ec1" data-x="1184.791" data-y="286" data-w="11.787" data-depth="12">
+<title>ntoskrnl.exe!0xfffff80079f44ec1
+Inclusive samples: 31 (0.98%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1</title><rect x="1184.791" y="286" width="11.787" height="21" rx="2" fill="hsl(24, 78%, 82%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079a1af10" data-x="1184.791" data-y="264" data-w="11.787" data-depth="13">
+<title>ntoskrnl.exe!0xfffff80079a1af10
+Inclusive samples: 31 (0.98%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10</title><rect x="1184.791" y="264" width="11.787" height="21" rx="2" fill="hsl(29, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079efaf60" data-x="1184.791" data-y="242" data-w="11.787" data-depth="14">
+<title>ntoskrnl.exe!0xfffff80079efaf60
+Inclusive samples: 31 (0.98%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60</title><rect x="1184.791" y="242" width="11.787" height="21" rx="2" fill="hsl(19, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079a1928b" data-x="1184.791" data-y="220" data-w="11.787" data-depth="15">
+<title>ntoskrnl.exe!0xfffff80079a1928b
+Inclusive samples: 31 (0.98%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b</title><rect x="1184.791" y="220" width="11.787" height="21" rx="2" fill="hsl(10, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079a1946a" data-x="1184.791" data-y="198" data-w="11.787" data-depth="16">
+<title>ntoskrnl.exe!0xfffff80079a1946a
+Inclusive samples: 31 (0.98%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a</title><rect x="1184.791" y="198" width="11.787" height="21" rx="2" fill="hsl(15, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798a33e4" data-x="1184.791" data-y="176" data-w="6.844" data-depth="17">
+<title>ntoskrnl.exe!0xfffff800798a33e4
+Inclusive samples: 18 (0.57%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4</title><rect x="1184.791" y="176" width="6.844" height="21" rx="2" fill="hsl(9, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798a493a" data-x="1184.791" data-y="154" data-w="6.464" data-depth="18">
+<title>ntoskrnl.exe!0xfffff800798a493a
+Inclusive samples: 17 (0.54%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a</title><rect x="1184.791" y="154" width="6.464" height="21" rx="2" fill="hsl(9, 78%, 85%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079a1edf4" data-x="1184.791" data-y="132" data-w="5.323" data-depth="19">
+<title>ntoskrnl.exe!0xfffff80079a1edf4
+Inclusive samples: 14 (0.44%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1edf4</title><rect x="1184.791" y="132" width="5.323" height="21" rx="2" fill="hsl(24, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798440b0" data-x="1184.791" data-y="110" data-w="4.183" data-depth="20">
+<title>ntoskrnl.exe!0xfffff800798440b0
+Inclusive samples: 11 (0.35%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1edf4;ntoskrnl.exe!0xfffff800798440b0</title><rect x="1184.791" y="110" width="4.183" height="21" rx="2" fill="hsl(23, 78%, 83%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079844341" data-x="1184.791" data-y="88" data-w="1.521" data-depth="21">
+<title>ntoskrnl.exe!0xfffff80079844341
+Inclusive samples: 4 (0.13%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1edf4;ntoskrnl.exe!0xfffff800798440b0;ntoskrnl.exe!0xfffff80079844341</title><rect x="1184.791" y="88" width="1.521" height="21" rx="2" fill="hsl(31, 78%, 88%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079844316" data-x="1186.312" data-y="88" data-w="1.141" data-depth="21">
+<title>ntoskrnl.exe!0xfffff80079844316
+Inclusive samples: 3 (0.10%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1edf4;ntoskrnl.exe!0xfffff800798440b0;ntoskrnl.exe!0xfffff80079844316</title><rect x="1186.312" y="88" width="1.141" height="21" rx="2" fill="hsl(27, 78%, 82%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079844360" data-x="1187.452" data-y="88" data-w="0.760" data-depth="21">
+<title>ntoskrnl.exe!0xfffff80079844360
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1edf4;ntoskrnl.exe!0xfffff800798440b0;ntoskrnl.exe!0xfffff80079844360</title><rect x="1187.452" y="88" width="0.760" height="21" rx="2" fill="hsl(30, 78%, 88%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798442e0" data-x="1188.213" data-y="88" data-w="0.380" data-depth="21">
+<title>ntoskrnl.exe!0xfffff800798442e0
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1edf4;ntoskrnl.exe!0xfffff800798440b0;ntoskrnl.exe!0xfffff800798442e0</title><rect x="1188.213" y="88" width="0.380" height="21" rx="2" fill="hsl(18, 78%, 88%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798443ac" data-x="1188.593" data-y="88" data-w="0.380" data-depth="21">
+<title>ntoskrnl.exe!0xfffff800798443ac
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1edf4;ntoskrnl.exe!0xfffff800798440b0;ntoskrnl.exe!0xfffff800798443ac</title><rect x="1188.593" y="88" width="0.380" height="21" rx="2" fill="hsl(4, 78%, 87%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079843ff1" data-x="1188.973" data-y="110" data-w="0.380" data-depth="20">
+<title>ntoskrnl.exe!0xfffff80079843ff1
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1edf4;ntoskrnl.exe!0xfffff80079843ff1</title><rect x="1188.973" y="110" width="0.380" height="21" rx="2" fill="hsl(1, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079844085" data-x="1189.354" data-y="110" data-w="0.380" data-depth="20">
+<title>ntoskrnl.exe!0xfffff80079844085
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1edf4;ntoskrnl.exe!0xfffff80079844085</title><rect x="1189.354" y="110" width="0.380" height="21" rx="2" fill="hsl(6, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079844103" data-x="1189.734" data-y="110" data-w="0.380" data-depth="20">
+<title>ntoskrnl.exe!0xfffff80079844103
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1edf4;ntoskrnl.exe!0xfffff80079844103</title><rect x="1189.734" y="110" width="0.380" height="21" rx="2" fill="hsl(3, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798328c4" data-x="1189.734" data-y="88" data-w="0.380" data-depth="21">
+<title>ntoskrnl.exe!0xfffff800798328c4
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1edf4;ntoskrnl.exe!0xfffff80079844103;ntoskrnl.exe!0xfffff800798328c4</title><rect x="1189.734" y="88" width="0.380" height="21" rx="2" fill="hsl(21, 78%, 87%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079a1ed51" data-x="1190.114" data-y="132" data-w="1.141" data-depth="19">
+<title>ntoskrnl.exe!0xfffff80079a1ed51
+Inclusive samples: 3 (0.10%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1ed51</title><rect x="1190.114" y="132" width="1.141" height="21" rx="2" fill="hsl(4, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079960586" data-x="1190.114" data-y="110" data-w="0.760" data-depth="20">
+<title>ntoskrnl.exe!0xfffff80079960586
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1ed51;ntoskrnl.exe!0xfffff80079960586</title><rect x="1190.114" y="110" width="0.760" height="21" rx="2" fill="hsl(7, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800799619dd" data-x="1190.114" data-y="88" data-w="0.760" data-depth="21">
+<title>ntoskrnl.exe!0xfffff800799619dd
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1ed51;ntoskrnl.exe!0xfffff80079960586;ntoskrnl.exe!0xfffff800799619dd</title><rect x="1190.114" y="88" width="0.760" height="21" rx="2" fill="hsl(16, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079832188" data-x="1190.114" data-y="66" data-w="0.380" data-depth="22">
+<title>ntoskrnl.exe!0xfffff80079832188
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1ed51;ntoskrnl.exe!0xfffff80079960586;ntoskrnl.exe!0xfffff800799619dd;ntoskrnl.exe!0xfffff80079832188</title><rect x="1190.114" y="66" width="0.380" height="21" rx="2" fill="hsl(33, 78%, 82%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798322ee" data-x="1190.494" data-y="66" data-w="0.380" data-depth="22">
+<title>ntoskrnl.exe!0xfffff800798322ee
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1ed51;ntoskrnl.exe!0xfffff80079960586;ntoskrnl.exe!0xfffff800799619dd;ntoskrnl.exe!0xfffff800798322ee</title><rect x="1190.494" y="66" width="0.380" height="21" rx="2" fill="hsl(6, 78%, 85%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798338f8" data-x="1190.494" data-y="44" data-w="0.380" data-depth="23">
+<title>ntoskrnl.exe!0xfffff800798338f8
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1ed51;ntoskrnl.exe!0xfffff80079960586;ntoskrnl.exe!0xfffff800799619dd;ntoskrnl.exe!0xfffff800798322ee;ntoskrnl.exe!0xfffff800798338f8</title><rect x="1190.494" y="44" width="0.380" height="21" rx="2" fill="hsl(29, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079833e3b" data-x="1190.494" data-y="22" data-w="0.380" data-depth="24">
+<title>ntoskrnl.exe!0xfffff80079833e3b
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1ed51;ntoskrnl.exe!0xfffff80079960586;ntoskrnl.exe!0xfffff800799619dd;ntoskrnl.exe!0xfffff800798322ee;ntoskrnl.exe!0xfffff800798338f8;ntoskrnl.exe!0xfffff80079833e3b</title><rect x="1190.494" y="22" width="0.380" height="21" rx="2" fill="hsl(21, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079960595" data-x="1190.875" data-y="110" data-w="0.380" data-depth="20">
+<title>ntoskrnl.exe!0xfffff80079960595
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a493a;ntoskrnl.exe!0xfffff80079a1ed51;ntoskrnl.exe!0xfffff80079960595</title><rect x="1190.875" y="110" width="0.380" height="21" rx="2" fill="hsl(11, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798a495b" data-x="1191.255" data-y="154" data-w="0.380" data-depth="18">
+<title>ntoskrnl.exe!0xfffff800798a495b
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a495b</title><rect x="1191.255" y="154" width="0.380" height="21" rx="2" fill="hsl(30, 78%, 85%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798bda1e" data-x="1191.255" data-y="132" data-w="0.380" data-depth="19">
+<title>ntoskrnl.exe!0xfffff800798bda1e
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a33e4;ntoskrnl.exe!0xfffff800798a495b;ntoskrnl.exe!0xfffff800798bda1e</title><rect x="1191.255" y="132" width="0.380" height="21" rx="2" fill="hsl(14, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798a2fe1" data-x="1191.635" data-y="176" data-w="4.563" data-depth="17">
+<title>ntoskrnl.exe!0xfffff800798a2fe1
+Inclusive samples: 12 (0.38%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a2fe1</title><rect x="1191.635" y="176" width="4.563" height="21" rx="2" fill="hsl(0, 78%, 88%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798a4362" data-x="1191.635" data-y="154" data-w="4.183" data-depth="18">
+<title>ntoskrnl.exe!0xfffff800798a4362
+Inclusive samples: 11 (0.35%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a2fe1;ntoskrnl.exe!0xfffff800798a4362</title><rect x="1191.635" y="154" width="4.183" height="21" rx="2" fill="hsl(31, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079862bca" data-x="1191.635" data-y="132" data-w="3.042" data-depth="19">
+<title>ntoskrnl.exe!0xfffff80079862bca
+Inclusive samples: 8 (0.25%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a2fe1;ntoskrnl.exe!0xfffff800798a4362;ntoskrnl.exe!0xfffff80079862bca</title><rect x="1191.635" y="132" width="3.042" height="21" rx="2" fill="hsl(23, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007985f7a9" data-x="1191.635" data-y="110" data-w="0.760" data-depth="20">
+<title>ntoskrnl.exe!0xfffff8007985f7a9
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a2fe1;ntoskrnl.exe!0xfffff800798a4362;ntoskrnl.exe!0xfffff80079862bca;ntoskrnl.exe!0xfffff8007985f7a9</title><rect x="1191.635" y="110" width="0.760" height="21" rx="2" fill="hsl(11, 78%, 87%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007985f87c" data-x="1192.395" data-y="110" data-w="0.760" data-depth="20">
+<title>ntoskrnl.exe!0xfffff8007985f87c
+Inclusive samples: 2 (0.06%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a2fe1;ntoskrnl.exe!0xfffff800798a4362;ntoskrnl.exe!0xfffff80079862bca;ntoskrnl.exe!0xfffff8007985f87c</title><rect x="1192.395" y="110" width="0.760" height="21" rx="2" fill="hsl(34, 78%, 85%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007985f650" data-x="1193.156" data-y="110" data-w="0.380" data-depth="20">
+<title>ntoskrnl.exe!0xfffff8007985f650
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a2fe1;ntoskrnl.exe!0xfffff800798a4362;ntoskrnl.exe!0xfffff80079862bca;ntoskrnl.exe!0xfffff8007985f650</title><rect x="1193.156" y="110" width="0.380" height="21" rx="2" fill="hsl(23, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007985f79f" data-x="1193.536" data-y="110" data-w="0.380" data-depth="20">
+<title>ntoskrnl.exe!0xfffff8007985f79f
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a2fe1;ntoskrnl.exe!0xfffff800798a4362;ntoskrnl.exe!0xfffff80079862bca;ntoskrnl.exe!0xfffff8007985f79f</title><rect x="1193.536" y="110" width="0.380" height="21" rx="2" fill="hsl(14, 78%, 82%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007985f7ef" data-x="1193.916" data-y="110" data-w="0.380" data-depth="20">
+<title>ntoskrnl.exe!0xfffff8007985f7ef
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a2fe1;ntoskrnl.exe!0xfffff800798a4362;ntoskrnl.exe!0xfffff80079862bca;ntoskrnl.exe!0xfffff8007985f7ef</title><rect x="1193.916" y="110" width="0.380" height="21" rx="2" fill="hsl(34, 78%, 87%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007985f8a6" data-x="1194.297" data-y="110" data-w="0.380" data-depth="20">
+<title>ntoskrnl.exe!0xfffff8007985f8a6
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a2fe1;ntoskrnl.exe!0xfffff800798a4362;ntoskrnl.exe!0xfffff80079862bca;ntoskrnl.exe!0xfffff8007985f8a6</title><rect x="1194.297" y="110" width="0.380" height="21" rx="2" fill="hsl(3, 78%, 82%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079862b3b" data-x="1194.677" data-y="132" data-w="0.380" data-depth="19">
+<title>ntoskrnl.exe!0xfffff80079862b3b
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a2fe1;ntoskrnl.exe!0xfffff800798a4362;ntoskrnl.exe!0xfffff80079862b3b</title><rect x="1194.677" y="132" width="0.380" height="21" rx="2" fill="hsl(6, 78%, 88%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079862ca1" data-x="1195.057" data-y="132" data-w="0.380" data-depth="19">
+<title>ntoskrnl.exe!0xfffff80079862ca1
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a2fe1;ntoskrnl.exe!0xfffff800798a4362;ntoskrnl.exe!0xfffff80079862ca1</title><rect x="1195.057" y="132" width="0.380" height="21" rx="2" fill="hsl(26, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079862db8" data-x="1195.437" data-y="132" data-w="0.380" data-depth="19">
+<title>ntoskrnl.exe!0xfffff80079862db8
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a2fe1;ntoskrnl.exe!0xfffff800798a4362;ntoskrnl.exe!0xfffff80079862db8</title><rect x="1195.437" y="132" width="0.380" height="21" rx="2" fill="hsl(7, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079814af3" data-x="1195.437" data-y="110" data-w="0.380" data-depth="20">
+<title>ntoskrnl.exe!0xfffff80079814af3
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a2fe1;ntoskrnl.exe!0xfffff800798a4362;ntoskrnl.exe!0xfffff80079862db8;ntoskrnl.exe!0xfffff80079814af3</title><rect x="1195.437" y="110" width="0.380" height="21" rx="2" fill="hsl(6, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798a428f" data-x="1195.817" data-y="154" data-w="0.380" data-depth="18">
+<title>ntoskrnl.exe!0xfffff800798a428f
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a2fe1;ntoskrnl.exe!0xfffff800798a428f</title><rect x="1195.817" y="154" width="0.380" height="21" rx="2" fill="hsl(6, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798a30e5" data-x="1196.198" data-y="176" data-w="0.380" data-depth="17">
+<title>ntoskrnl.exe!0xfffff800798a30e5
+Inclusive samples: 1 (0.03%)
+Stack: ntdll.dll!0x00007ffcfbd59c5c;kernel32.dll!0x00007ffcfb55dda7;benchmark.exe!__scrt_common_main_seh;benchmark.exe!main;ucrtbase.dll!0x00007ffcf9252d7b;ntdll.dll!0x00007ffcfbcb7850;ntdll.dll!0x00007ffcfbce41c9;ntdll.dll!0x00007ffcfbcf8b9f;ntdll.dll!0x00007ffcfbdf67a4;ntoskrnl.exe!0xfffff80079ccf528;ntoskrnl.exe!0xfffff80079f448cd;ntoskrnl.exe!0xfffff80079f44aab;ntoskrnl.exe!0xfffff80079f44ec1;ntoskrnl.exe!0xfffff80079a1af10;ntoskrnl.exe!0xfffff80079efaf60;ntoskrnl.exe!0xfffff80079a1928b;ntoskrnl.exe!0xfffff80079a1946a;ntoskrnl.exe!0xfffff800798a30e5</title><rect x="1196.198" y="176" width="0.380" height="21" rx="2" fill="hsl(7, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079cbe72c" data-x="1196.578" data-y="550" data-w="1.901" data-depth="0">
+<title>ntoskrnl.exe!0xfffff80079cbe72c
+Inclusive samples: 5 (0.16%)
+Stack: ntoskrnl.exe!0xfffff80079cbe72c</title><rect x="1196.578" y="550" width="1.901" height="21" rx="2" fill="hsl(3, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079cbdf1e" data-x="1196.578" data-y="528" data-w="1.141" data-depth="1">
+<title>ntoskrnl.exe!0xfffff80079cbdf1e
+Inclusive samples: 3 (0.10%)
+Stack: ntoskrnl.exe!0xfffff80079cbe72c;ntoskrnl.exe!0xfffff80079cbdf1e</title><rect x="1196.578" y="528" width="1.141" height="21" rx="2" fill="hsl(16, 78%, 82%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800798ee964" data-x="1196.578" data-y="506" data-w="1.141" data-depth="2">
+<title>ntoskrnl.exe!0xfffff800798ee964
+Inclusive samples: 3 (0.10%)
+Stack: ntoskrnl.exe!0xfffff80079cbe72c;ntoskrnl.exe!0xfffff80079cbdf1e;ntoskrnl.exe!0xfffff800798ee964</title><rect x="1196.578" y="506" width="1.141" height="21" rx="2" fill="hsl(30, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007995015d" data-x="1196.578" data-y="484" data-w="0.760" data-depth="3">
+<title>ntoskrnl.exe!0xfffff8007995015d
+Inclusive samples: 2 (0.06%)
+Stack: ntoskrnl.exe!0xfffff80079cbe72c;ntoskrnl.exe!0xfffff80079cbdf1e;ntoskrnl.exe!0xfffff800798ee964;ntoskrnl.exe!0xfffff8007995015d</title><rect x="1196.578" y="484" width="0.760" height="21" rx="2" fill="hsl(9, 78%, 83%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079951182" data-x="1196.578" data-y="462" data-w="0.760" data-depth="4">
+<title>ntoskrnl.exe!0xfffff80079951182
+Inclusive samples: 2 (0.06%)
+Stack: ntoskrnl.exe!0xfffff80079cbe72c;ntoskrnl.exe!0xfffff80079cbdf1e;ntoskrnl.exe!0xfffff800798ee964;ntoskrnl.exe!0xfffff8007995015d;ntoskrnl.exe!0xfffff80079951182</title><rect x="1196.578" y="462" width="0.760" height="21" rx="2" fill="hsl(35, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079952ba0" data-x="1196.578" data-y="440" data-w="0.380" data-depth="5">
+<title>ntoskrnl.exe!0xfffff80079952ba0
+Inclusive samples: 1 (0.03%)
+Stack: ntoskrnl.exe!0xfffff80079cbe72c;ntoskrnl.exe!0xfffff80079cbdf1e;ntoskrnl.exe!0xfffff800798ee964;ntoskrnl.exe!0xfffff8007995015d;ntoskrnl.exe!0xfffff80079951182;ntoskrnl.exe!0xfffff80079952ba0</title><rect x="1196.578" y="440" width="0.380" height="21" rx="2" fill="hsl(10, 78%, 88%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007995415f" data-x="1196.578" data-y="418" data-w="0.380" data-depth="6">
+<title>ntoskrnl.exe!0xfffff8007995415f
+Inclusive samples: 1 (0.03%)
+Stack: ntoskrnl.exe!0xfffff80079cbe72c;ntoskrnl.exe!0xfffff80079cbdf1e;ntoskrnl.exe!0xfffff800798ee964;ntoskrnl.exe!0xfffff8007995015d;ntoskrnl.exe!0xfffff80079951182;ntoskrnl.exe!0xfffff80079952ba0;ntoskrnl.exe!0xfffff8007995415f</title><rect x="1196.578" y="418" width="0.380" height="21" rx="2" fill="hsl(11, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079952bdf" data-x="1196.958" data-y="440" data-w="0.380" data-depth="5">
+<title>ntoskrnl.exe!0xfffff80079952bdf
+Inclusive samples: 1 (0.03%)
+Stack: ntoskrnl.exe!0xfffff80079cbe72c;ntoskrnl.exe!0xfffff80079cbdf1e;ntoskrnl.exe!0xfffff800798ee964;ntoskrnl.exe!0xfffff8007995015d;ntoskrnl.exe!0xfffff80079951182;ntoskrnl.exe!0xfffff80079952bdf</title><rect x="1196.958" y="440" width="0.380" height="21" rx="2" fill="hsl(33, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800799501e2" data-x="1197.338" data-y="484" data-w="0.380" data-depth="3">
+<title>ntoskrnl.exe!0xfffff800799501e2
+Inclusive samples: 1 (0.03%)
+Stack: ntoskrnl.exe!0xfffff80079cbe72c;ntoskrnl.exe!0xfffff80079cbdf1e;ntoskrnl.exe!0xfffff800798ee964;ntoskrnl.exe!0xfffff800799501e2</title><rect x="1197.338" y="484" width="0.380" height="21" rx="2" fill="hsl(15, 78%, 82%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079cbdf0d" data-x="1197.719" data-y="528" data-w="0.760" data-depth="1">
+<title>ntoskrnl.exe!0xfffff80079cbdf0d
+Inclusive samples: 2 (0.06%)
+Stack: ntoskrnl.exe!0xfffff80079cbe72c;ntoskrnl.exe!0xfffff80079cbdf0d</title><rect x="1197.719" y="528" width="0.760" height="21" rx="2" fill="hsl(18, 78%, 86%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079cc302f" data-x="1198.479" data-y="550" data-w="1.521" data-depth="0">
+<title>ntoskrnl.exe!0xfffff80079cc302f
+Inclusive samples: 4 (0.13%)
+Stack: ntoskrnl.exe!0xfffff80079cc302f</title><rect x="1198.479" y="550" width="1.521" height="21" rx="2" fill="hsl(16, 78%, 85%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079901515" data-x="1198.479" data-y="528" data-w="1.521" data-depth="1">
+<title>ntoskrnl.exe!0xfffff80079901515
+Inclusive samples: 4 (0.13%)
+Stack: ntoskrnl.exe!0xfffff80079cc302f;ntoskrnl.exe!0xfffff80079901515</title><rect x="1198.479" y="528" width="1.521" height="21" rx="2" fill="hsl(4, 78%, 85%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079cc3baf" data-x="1198.479" data-y="506" data-w="1.521" data-depth="2">
+<title>ntoskrnl.exe!0xfffff80079cc3baf
+Inclusive samples: 4 (0.13%)
+Stack: ntoskrnl.exe!0xfffff80079cc302f;ntoskrnl.exe!0xfffff80079901515;ntoskrnl.exe!0xfffff80079cc3baf</title><rect x="1198.479" y="506" width="1.521" height="21" rx="2" fill="hsl(13, 78%, 85%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079cc3c05" data-x="1198.479" data-y="484" data-w="1.521" data-depth="3">
+<title>ntoskrnl.exe!0xfffff80079cc3c05
+Inclusive samples: 4 (0.13%)
+Stack: ntoskrnl.exe!0xfffff80079cc302f;ntoskrnl.exe!0xfffff80079901515;ntoskrnl.exe!0xfffff80079cc3baf;ntoskrnl.exe!0xfffff80079cc3c05</title><rect x="1198.479" y="484" width="1.521" height="21" rx="2" fill="hsl(18, 78%, 89%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800799001ca" data-x="1198.479" data-y="462" data-w="1.521" data-depth="4">
+<title>ntoskrnl.exe!0xfffff800799001ca
+Inclusive samples: 4 (0.13%)
+Stack: ntoskrnl.exe!0xfffff80079cc302f;ntoskrnl.exe!0xfffff80079901515;ntoskrnl.exe!0xfffff80079cc3baf;ntoskrnl.exe!0xfffff80079cc3c05;ntoskrnl.exe!0xfffff800799001ca</title><rect x="1198.479" y="462" width="1.521" height="21" rx="2" fill="hsl(19, 78%, 83%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007987c642" data-x="1198.479" data-y="440" data-w="1.141" data-depth="5">
+<title>ntoskrnl.exe!0xfffff8007987c642
+Inclusive samples: 3 (0.10%)
+Stack: ntoskrnl.exe!0xfffff80079cc302f;ntoskrnl.exe!0xfffff80079901515;ntoskrnl.exe!0xfffff80079cc3baf;ntoskrnl.exe!0xfffff80079cc3c05;ntoskrnl.exe!0xfffff800799001ca;ntoskrnl.exe!0xfffff8007987c642</title><rect x="1198.479" y="440" width="1.141" height="21" rx="2" fill="hsl(19, 78%, 84%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007998830d" data-x="1198.479" data-y="418" data-w="1.141" data-depth="6">
+<title>ntoskrnl.exe!0xfffff8007998830d
+Inclusive samples: 3 (0.10%)
+Stack: ntoskrnl.exe!0xfffff80079cc302f;ntoskrnl.exe!0xfffff80079901515;ntoskrnl.exe!0xfffff80079cc3baf;ntoskrnl.exe!0xfffff80079cc3c05;ntoskrnl.exe!0xfffff800799001ca;ntoskrnl.exe!0xfffff8007987c642;ntoskrnl.exe!0xfffff8007998830d</title><rect x="1198.479" y="418" width="1.141" height="21" rx="2" fill="hsl(21, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff800799847ff" data-x="1198.479" data-y="396" data-w="0.380" data-depth="7">
+<title>ntoskrnl.exe!0xfffff800799847ff
+Inclusive samples: 1 (0.03%)
+Stack: ntoskrnl.exe!0xfffff80079cc302f;ntoskrnl.exe!0xfffff80079901515;ntoskrnl.exe!0xfffff80079cc3baf;ntoskrnl.exe!0xfffff80079cc3c05;ntoskrnl.exe!0xfffff800799001ca;ntoskrnl.exe!0xfffff8007987c642;ntoskrnl.exe!0xfffff8007998830d;ntoskrnl.exe!0xfffff800799847ff</title><rect x="1198.479" y="396" width="0.380" height="21" rx="2" fill="hsl(5, 78%, 87%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079985a1d" data-x="1198.479" data-y="374" data-w="0.380" data-depth="8">
+<title>ntoskrnl.exe!0xfffff80079985a1d
+Inclusive samples: 1 (0.03%)
+Stack: ntoskrnl.exe!0xfffff80079cc302f;ntoskrnl.exe!0xfffff80079901515;ntoskrnl.exe!0xfffff80079cc3baf;ntoskrnl.exe!0xfffff80079cc3c05;ntoskrnl.exe!0xfffff800799001ca;ntoskrnl.exe!0xfffff8007987c642;ntoskrnl.exe!0xfffff8007998830d;ntoskrnl.exe!0xfffff800799847ff;ntoskrnl.exe!0xfffff80079985a1d</title><rect x="1198.479" y="374" width="0.380" height="21" rx="2" fill="hsl(31, 78%, 85%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079af207e" data-x="1198.479" data-y="352" data-w="0.380" data-depth="9">
+<title>ntoskrnl.exe!0xfffff80079af207e
+Inclusive samples: 1 (0.03%)
+Stack: ntoskrnl.exe!0xfffff80079cc302f;ntoskrnl.exe!0xfffff80079901515;ntoskrnl.exe!0xfffff80079cc3baf;ntoskrnl.exe!0xfffff80079cc3c05;ntoskrnl.exe!0xfffff800799001ca;ntoskrnl.exe!0xfffff8007987c642;ntoskrnl.exe!0xfffff8007998830d;ntoskrnl.exe!0xfffff800799847ff;ntoskrnl.exe!0xfffff80079985a1d;ntoskrnl.exe!0xfffff80079af207e</title><rect x="1198.479" y="352" width="0.380" height="21" rx="2" fill="hsl(12, 78%, 87%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079984c17" data-x="1198.859" data-y="396" data-w="0.380" data-depth="7">
+<title>ntoskrnl.exe!0xfffff80079984c17
+Inclusive samples: 1 (0.03%)
+Stack: ntoskrnl.exe!0xfffff80079cc302f;ntoskrnl.exe!0xfffff80079901515;ntoskrnl.exe!0xfffff80079cc3baf;ntoskrnl.exe!0xfffff80079cc3c05;ntoskrnl.exe!0xfffff800799001ca;ntoskrnl.exe!0xfffff8007987c642;ntoskrnl.exe!0xfffff8007998830d;ntoskrnl.exe!0xfffff80079984c17</title><rect x="1198.859" y="396" width="0.380" height="21" rx="2" fill="hsl(17, 78%, 88%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079984fe3" data-x="1198.859" data-y="374" data-w="0.380" data-depth="8">
+<title>ntoskrnl.exe!0xfffff80079984fe3
+Inclusive samples: 1 (0.03%)
+Stack: ntoskrnl.exe!0xfffff80079cc302f;ntoskrnl.exe!0xfffff80079901515;ntoskrnl.exe!0xfffff80079cc3baf;ntoskrnl.exe!0xfffff80079cc3c05;ntoskrnl.exe!0xfffff800799001ca;ntoskrnl.exe!0xfffff8007987c642;ntoskrnl.exe!0xfffff8007998830d;ntoskrnl.exe!0xfffff80079984c17;ntoskrnl.exe!0xfffff80079984fe3</title><rect x="1198.859" y="374" width="0.380" height="21" rx="2" fill="hsl(14, 78%, 87%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079985647" data-x="1198.859" data-y="352" data-w="0.380" data-depth="9">
+<title>ntoskrnl.exe!0xfffff80079985647
+Inclusive samples: 1 (0.03%)
+Stack: ntoskrnl.exe!0xfffff80079cc302f;ntoskrnl.exe!0xfffff80079901515;ntoskrnl.exe!0xfffff80079cc3baf;ntoskrnl.exe!0xfffff80079cc3c05;ntoskrnl.exe!0xfffff800799001ca;ntoskrnl.exe!0xfffff8007987c642;ntoskrnl.exe!0xfffff8007998830d;ntoskrnl.exe!0xfffff80079984c17;ntoskrnl.exe!0xfffff80079984fe3;ntoskrnl.exe!0xfffff80079985647</title><rect x="1198.859" y="352" width="0.380" height="21" rx="2" fill="hsl(26, 78%, 90%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079a1152e" data-x="1199.240" data-y="396" data-w="0.380" data-depth="7">
+<title>ntoskrnl.exe!0xfffff80079a1152e
+Inclusive samples: 1 (0.03%)
+Stack: ntoskrnl.exe!0xfffff80079cc302f;ntoskrnl.exe!0xfffff80079901515;ntoskrnl.exe!0xfffff80079cc3baf;ntoskrnl.exe!0xfffff80079cc3c05;ntoskrnl.exe!0xfffff800799001ca;ntoskrnl.exe!0xfffff8007987c642;ntoskrnl.exe!0xfffff8007998830d;ntoskrnl.exe!0xfffff80079a1152e</title><rect x="1199.240" y="396" width="0.380" height="21" rx="2" fill="hsl(32, 78%, 82%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff80079a11951" data-x="1199.240" data-y="374" data-w="0.380" data-depth="8">
+<title>ntoskrnl.exe!0xfffff80079a11951
+Inclusive samples: 1 (0.03%)
+Stack: ntoskrnl.exe!0xfffff80079cc302f;ntoskrnl.exe!0xfffff80079901515;ntoskrnl.exe!0xfffff80079cc3baf;ntoskrnl.exe!0xfffff80079cc3c05;ntoskrnl.exe!0xfffff800799001ca;ntoskrnl.exe!0xfffff8007987c642;ntoskrnl.exe!0xfffff8007998830d;ntoskrnl.exe!0xfffff80079a1152e;ntoskrnl.exe!0xfffff80079a11951</title><rect x="1199.240" y="374" width="0.380" height="21" rx="2" fill="hsl(31, 78%, 88%)"/>
+</g>
+<g class="frame" data-name="ntoskrnl.exe!0xfffff8007987c1eb" data-x="1199.620" data-y="440" data-w="0.380" data-depth="5">
+<title>ntoskrnl.exe!0xfffff8007987c1eb
+Inclusive samples: 1 (0.03%)
+Stack: ntoskrnl.exe!0xfffff80079cc302f;ntoskrnl.exe!0xfffff80079901515;ntoskrnl.exe!0xfffff80079cc3baf;ntoskrnl.exe!0xfffff80079cc3c05;ntoskrnl.exe!0xfffff800799001ca;ntoskrnl.exe!0xfffff8007987c1eb</title><rect x="1199.620" y="440" width="0.380" height="21" rx="2" fill="hsl(3, 78%, 83%)"/>
+</g>
+</g>
+<text id="sample-label" x="8" y="664" font-size="11">Samples are weighted by observed workload-window hits</text>
+<script><![CDATA[function searchFrames(q){q=q.toLowerCase();document.querySelectorAll(".frame").forEach(function(e){e.style.opacity=(!q||e.dataset.name.indexOf(q)>=0)?"1":".16"})}]]></script>
+</svg>

@@ -1,0 +1,41 @@
+{
+  "passed": true,
+  "checks": [
+    "Od: fixtures, signed extremes, uneven partitions, fixed seed, empty/K guards",
+    "Od: sequential results verified",
+    "Od: parallel results verified",
+    "Od: rejected --n 0",
+    "Od: rejected --mode invalid",
+    "Od: rejected --mode parallel --n 1 --threads 2",
+    "Od: rejected --n -1",
+    "O2: fixtures, signed extremes, uneven partitions, fixed seed, empty/K guards",
+    "O2: sequential results verified",
+    "O2: parallel results verified",
+    "O2: rejected --n 0",
+    "O2: rejected --mode invalid",
+    "O2: rejected --mode parallel --n 1 --threads 2",
+    "O2: rejected --n -1"
+  ],
+  "matching_fingerprints": [
+    [
+      779,
+      4674,
+      45686752
+    ],
+    [
+      779,
+      4674,
+      45686752
+    ],
+    [
+      779,
+      4674,
+      45686752
+    ],
+    [
+      779,
+      4674,
+      45686752
+    ]
+  ]
+}

@@ -1,0 +1,23 @@
+﻿{
+  "n":10000000,
+  "repeats":100,
+  "batches":40,
+  "mode":"sequential",
+  "threads":1,
+  "seed":42,
+  "minimum":1,
+  "checksum":4000,
+  "input_sum":4999812386061,
+  "verified":true,
+  "start_unix_us":1794908525352169,
+  "end_unix_us":1794908528518274,
+  "generation_s":1.065120500,
+  "search_s":2.100967500,
+  "workload_s":3.166101400,
+  "user_s":3.078125000,
+  "kernel_s":0.078125000,
+  "process_cycles":14144356800,
+  "page_faults":391430,
+  "peak_working_set_bytes":84258816,
+  "private_bytes":40759296
+}

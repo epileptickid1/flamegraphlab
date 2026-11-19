@@ -1,0 +1,24 @@
+Number of Processors : 16
+CPU Speed            : 4500 MHz
+OS Version           : 10.00.00.00
+OS Build Number      : 26300
+Clock type           : PerfCounter
+Boot time            : 2026/11/17:08:57:00.5000000
+Native Pointer Size  : 8 (64bit)
+Start time (UTC)     : 2026/11/17:09:41:46.2353891
+End time (UTC)       : 2026/11/17:09:41:55.2138873  (+         0:00:00:08.9784982)
+Total # Lost Buffers : 0
+Total # Lost Events  : 0
+
+Number of Traces     : 1
+
+Trace name: D:\homework\sysprog\flamegraph\results\wpr-20261117-114145\Od.etl
+    Log file mode        : Sequential Relogged
+    Pointer size         : 8 (64bit)
+    Start time (UTC)     : 2026/11/17:09:41:46.2353891
+    End time (UTC)       : 2026/11/17:09:41:55.2138873  (+         0:00:00:08.9784982)
+    Start time (Local)   : 2026/11/17:11:41:46.2353891
+    End time (Local)     : 2026/11/17:11:41:55.2138873
+    # Lost Buffers       : 0
+    # Lost Events        : 0
+

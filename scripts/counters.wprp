@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Based on Microsoft's "Recording Hardware Performance (PMU) Events".
+     Validate against installed WPR; a successful recording still needs PMU support. -->
+<WindowsPerformanceRecorder Version="1.0" Author="Performance lab">
+  <Profiles>
+    <SystemCollector Id="SC" Name="FlamegraphLab">
+      <BufferSize Value="1024"/>
+      <Buffers Value="128"/>
+    </SystemCollector>
+    <SystemProvider Id="SP">
+      <Keywords>
+        <Keyword Value="ProcessThread"/>
+        <Keyword Value="Loader"/>
+        <Keyword Value="CSwitch"/>
+        <Keyword Value="SampledProfile"/>
+      </Keywords>
+      <Stacks><Stack Value="SampledProfile"/></Stacks>
+    </SystemProvider>
+    <HardwareCounter Id="HC" Strict="true">
+      <Counters>
+        <Counter Value="TotalCycles"/>
+        <Counter Value="InstructionRetired"/>
+        <Counter Value="CacheMisses"/>
+        <Counter Value="BranchMispredictions"/>
+      </Counters>
+      <Events><Event Value="CSwitch"/></Events>
+    </HardwareCounter>
+    <Profile Id="LabCounters.Verbose.File" Name="LabCounters" Description="CPU stacks and PMCs for the performance lab" LoggingMode="File" DetailLevel="Verbose">
+      <Collectors>
+        <SystemCollectorId Value="SC">
+          <SystemProviderId Value="SP"/>
+          <HardwareCounterId Value="HC"/>
+        </SystemCollectorId>
+      </Collectors>
+    </Profile>
+  </Profiles>
+</WindowsPerformanceRecorder>

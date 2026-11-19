@@ -1,0 +1,36 @@
+[
+  {
+    "config": "Od",
+    "command": [
+      "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\xperf.exe",
+      "-i",
+      "D:\\homework\\sysprog\\flamegraph\\results\\wpr-20261117-114145\\Od.etl",
+      "-symbols",
+      "-o",
+      "D:\\homework\\sysprog\\flamegraph\\results\\wpr-20261117-114145\\Od-dump.txt",
+      "-a",
+      "dumper",
+      "-stacktimeshifting"
+    ],
+    "returncode": 0,
+    "symbols": "D:\\homework\\sysprog\\flamegraph\\results\\wpr-20261117-114145\\symbols\\Od",
+    "invalid_event_warning_count": 6
+  },
+  {
+    "config": "O2",
+    "command": [
+      "C:\\Program Files (x86)\\Windows Kits\\10\\Windows Performance Toolkit\\xperf.exe",
+      "-i",
+      "D:\\homework\\sysprog\\flamegraph\\results\\wpr-20261117-114145\\O2.etl",
+      "-symbols",
+      "-o",
+      "D:\\homework\\sysprog\\flamegraph\\results\\wpr-20261117-114145\\O2-dump.txt",
+      "-a",
+      "dumper",
+      "-stacktimeshifting"
+    ],
+    "returncode": 0,
+    "symbols": "D:\\homework\\sysprog\\flamegraph\\results\\wpr-20261117-114145\\symbols\\O2",
+    "invalid_event_warning_count": 6
+  }
+]

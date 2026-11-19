@@ -1,0 +1,789 @@
+{
+  "schema": 1,
+  "runs": [
+    {
+      "config": "Od",
+      "pid": 31200,
+      "counter_order": [
+        "BranchMispredictions",
+        "CacheMisses",
+        "InstructionRetired",
+        "TotalCycles"
+      ],
+      "attribution": "per-CPU consecutive CSwitch snapshot delta assigned to outgoing thread; continuity checked",
+      "scope": "Full benchmark process lifetime, user+kernel and any interrupt work charged to these scheduled intervals",
+      "lifetime_counts": {
+        "BranchMispredictions": 204736017,
+        "CacheMisses": 14574549,
+        "InstructionRetired": 141158154791,
+        "TotalCycles": 44008504296
+      },
+      "lifetime_scheduled_interval_us": 8063937,
+      "lifetime_ipc": 3.2075199339103664,
+      "workload_counts_lower_bound": {
+        "BranchMispredictions": 202477493,
+        "CacheMisses": 13731908,
+        "InstructionRetired": 138762280600,
+        "TotalCycles": 43320874504
+      },
+      "workload_counts_upper_bound": {
+        "BranchMispredictions": 204600223,
+        "CacheMisses": 14122462,
+        "InstructionRetired": 141144287901,
+        "TotalCycles": 43989607447
+      },
+      "workload_fully_covered_interval_us": 7937590,
+      "workload_scheduled_overlap_us": 8049861,
+      "workload_wall_duration_us": 8051501,
+      "quality": {
+        "target_switch_out_events": 216,
+        "attributed_target_slices": 216,
+        "workload_boundary_slices": 2,
+        "complete_workload_slices": 188,
+        "pmc_status_events": 16
+      },
+      "pmc_status_records": [
+        {
+          "cpu": 0,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 1,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 2,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 3,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 4,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 5,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 6,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 7,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 8,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 9,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 10,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 11,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 12,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 13,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 14,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 15,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        }
+      ],
+      "lost_events": 0,
+      "lost_buffers": 0,
+      "all_target_slices_attributed": true,
+      "notes": [
+        "Counts are differences, never sums of cumulative snapshots.",
+        "Snapshots are paired on the same logical CPU, with previous incoming TID == current outgoing TID.",
+        "Boundary-crossing scheduled intervals cannot be apportioned exactly by instruction count.",
+        "Workload lower/upper bounds exclude/include the entire boundary intervals; no linear prorating is claimed.",
+        "Full-lifetime counters include startup, verification and output, unlike the main workload-only timing table.",
+        "These are one profiled run per configuration, not medians of five runs.",
+        "No DPC/ISR exclusion was recorded; attribution follows context-switch scheduled intervals."
+      ]
+    },
+    {
+      "config": "O2",
+      "pid": 2272,
+      "counter_order": [
+        "BranchMispredictions",
+        "CacheMisses",
+        "InstructionRetired",
+        "TotalCycles"
+      ],
+      "attribution": "per-CPU consecutive CSwitch snapshot delta assigned to outgoing thread; continuity checked",
+      "scope": "Full benchmark process lifetime, user+kernel and any interrupt work charged to these scheduled intervals",
+      "lifetime_counts": {
+        "BranchMispredictions": 2043192,
+        "CacheMisses": 11785224,
+        "InstructionRetired": 75068527786,
+        "TotalCycles": 17270270869
+      },
+      "lifetime_scheduled_interval_us": 3172158,
+      "lifetime_ipc": 4.346690816572392,
+      "workload_counts_lower_bound": {
+        "BranchMispredictions": 1807017,
+        "CacheMisses": 10626806,
+        "InstructionRetired": 70412815216,
+        "TotalCycles": 16207082507
+      },
+      "workload_counts_upper_bound": {
+        "BranchMispredictions": 1927784,
+        "CacheMisses": 11389992,
+        "InstructionRetired": 75055275338,
+        "TotalCycles": 17254713895
+      },
+      "workload_fully_covered_interval_us": 2976708,
+      "workload_scheduled_overlap_us": 3163486,
+      "workload_wall_duration_us": 3166105,
+      "quality": {
+        "target_switch_out_events": 156,
+        "attributed_target_slices": 156,
+        "workload_boundary_slices": 2,
+        "complete_workload_slices": 137,
+        "pmc_status_events": 16
+      },
+      "pmc_status_records": [
+        {
+          "cpu": 0,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 1,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 2,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 3,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 4,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 5,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 6,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 7,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 8,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 9,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 10,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 11,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 12,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 13,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 14,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        },
+        {
+          "cpu": 15,
+          "sources": [
+            [
+              11,
+              0
+            ],
+            [
+              10,
+              0
+            ],
+            [
+              25,
+              0
+            ],
+            [
+              19,
+              0
+            ]
+          ]
+        }
+      ],
+      "lost_events": 0,
+      "lost_buffers": 0,
+      "all_target_slices_attributed": true,
+      "notes": [
+        "Counts are differences, never sums of cumulative snapshots.",
+        "Snapshots are paired on the same logical CPU, with previous incoming TID == current outgoing TID.",
+        "Boundary-crossing scheduled intervals cannot be apportioned exactly by instruction count.",
+        "Workload lower/upper bounds exclude/include the entire boundary intervals; no linear prorating is claimed.",
+        "Full-lifetime counters include startup, verification and output, unlike the main workload-only timing table.",
+        "These are one profiled run per configuration, not medians of five runs.",
+        "No DPC/ISR exclusion was recorded; attribution follows context-switch scheduled intervals."
+      ]
+    }
+  ]
+}

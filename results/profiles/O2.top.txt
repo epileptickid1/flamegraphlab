@@ -1,0 +1,46 @@
+ETW CPU stack summary (O2)
+Counts are weighted by the xperf SampledProfile Count field; folded paths preserve observed Stack No. ordering.
+Benchmark PID: 2272
+Measured workload window (UTC Unix microseconds): 1794908525352169 .. 1794908528518274
+
+inclusive  self  percent  function
+     3147     0   99.71%  benchmark.exe!__scrt_common_main_seh
+     3147     0   99.71%  benchmark.exe!main
+     3147     0   99.71%  kernel32.dll!0x00007ffcfb55dda7
+     3147     0   99.71%  ntdll.dll!0x00007ffcfbd59c5c
+     2080  2079   65.91%  benchmark.exe!`anonymous namespace'::_Sorting::_Minmax_element_impl<1:`anonymous namespace'::_Sorting::_Traits_4_avx>
+     2080     0   65.91%  benchmark.exe!sequential_min
+     1036   140   32.83%  benchmark.exe!make_data
+      788   638   24.97%  benchmark.exe!std::_Rng_from_urng_v2<unsigned int:std::mersenne_twister_engine<unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253> >::_Get_bits
+      150   150    4.75%  benchmark.exe!std::mersenne_twister_engine<unsigned int:32:624:397:31:2567483615:11:4294967295:7:2636928640:15:4022730752:18:1812433253>::_Refill_lower
+      108     0    3.42%  benchmark.exe!std::vector<int:std::allocator<int> >::vector<int:std::allocator<int> >
+       62    15    1.96%  vcruntime140.dll!0x00007ffcdf52e783
+       35     0    1.11%  ntoskrnl.exe!0xfffff80079ccb05b
+       34     0    1.08%  ntoskrnl.exe!0xfffff800798aa85e
+       33     0    1.05%  ntoskrnl.exe!0xfffff80079ccf528
+       32     0    1.01%  ntoskrnl.exe!0xfffff80079826cff
+       31     0    0.98%  ntdll.dll!0x00007ffcfbcb7850
+       31     0    0.98%  ntdll.dll!0x00007ffcfbce41c9
+       31     0    0.98%  ntdll.dll!0x00007ffcfbcf8b9f
+       31     0    0.98%  ntdll.dll!0x00007ffcfbdf67a4
+       31     0    0.98%  ntoskrnl.exe!0xfffff80079a1928b
+       31     0    0.98%  ntoskrnl.exe!0xfffff80079a1946a
+       31     0    0.98%  ntoskrnl.exe!0xfffff80079a1af10
+       31     0    0.98%  ntoskrnl.exe!0xfffff80079efaf60
+       31     0    0.98%  ntoskrnl.exe!0xfffff80079f448cd
+       31     0    0.98%  ntoskrnl.exe!0xfffff80079f44aab
+       31     0    0.98%  ntoskrnl.exe!0xfffff80079f44ec1
+       31     0    0.98%  ucrtbase.dll!0x00007ffcf9252d7b
+       30     0    0.95%  ntoskrnl.exe!0xfffff8007982adea
+       18     0    0.57%  ntoskrnl.exe!0xfffff800798a33e4
+       17     0    0.54%  ntoskrnl.exe!0xfffff800798a493a
+       17    17    0.54%  vcruntime140.dll!0x00007ffcdf52e77e
+       15     0    0.48%  ntoskrnl.exe!0xfffff8007982cf55
+       15     0    0.48%  ntoskrnl.exe!0xfffff8007982cf8e
+       14     0    0.44%  ntoskrnl.exe!0xfffff8007982d6f3
+       14     0    0.44%  ntoskrnl.exe!0xfffff80079a1edf4
+       12     0    0.38%  ntoskrnl.exe!0xfffff800798a2fe1
+       12    12    0.38%  ntoskrnl.exe!0xfffff80079ccb02c
+       11     0    0.35%  ntoskrnl.exe!0xfffff8007981b203
+       11     0    0.35%  ntoskrnl.exe!0xfffff800798440b0
+       11     0    0.35%  ntoskrnl.exe!0xfffff800798a4362

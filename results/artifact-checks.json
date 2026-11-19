@@ -1,0 +1,16 @@
+{
+  "passed": true,
+  "checks": [
+    "src\\sampler.cpp: auxiliary profiler changed since timing run; not linked into measured EXE",
+    "Measured source file hashes match current source",
+    "Od: SVG XML and bounds, folded weights, phase symbols, 0 lost ETW events",
+    "O2: SVG XML and bounds, folded weights, phase symbols, 0 lost ETW events",
+    "Od: PMC slice continuity and bounds",
+    "O2: PMC slice continuity and bounds",
+    "README.md: local links exist",
+    "ENERGY.md: local links exist",
+    "energy-20261119-143101: both CPU energy runs and baseline subtraction"
+  ],
+  "energy_measurement_status": "cpu_package_measured_and_incremental_energy_estimated",
+  "visual_qa": "SVG XML/geometry checked; headless browser rendering unavailable in sandbox"
+}

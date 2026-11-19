@@ -1,0 +1,42 @@
+
+Warning: EventSink {26f47713-fd49-471d-a67d-0561c7173f96} signaled an Invalid Event:
+         Event#: 21221    (T#0:#21221)
+         TimeStamp:      39931, Process: 5244, Thread:   -1, Cpu:  14
+         ClassicEventGuid: {b3e675d7-2554-4f18-830b-2762732560de}
+         ClassicEventDescriptor: 0x25  0x00 0x0002
+         MofLength: 12
+
+Warning: EventSink {26f47713-fd49-471d-a67d-0561c7173f96} signaled an Invalid Event:
+         Event#: 54077    (T#0:#54077)
+         TimeStamp:      73523, Process: 1844, Thread:   -1, Cpu:  14
+         ClassicEventGuid: {b3e675d7-2554-4f18-830b-2762732560de}
+         ClassicEventDescriptor: 0x25  0x00 0x0002
+         MofLength: 12
+
+Warning: EventSink {26f47713-fd49-471d-a67d-0561c7173f96} signaled an Invalid Event:
+         Event#: 54090    (T#0:#54090)
+         TimeStamp:      73547, Process: 1844, Thread:   -1, Cpu:   6
+         ClassicEventGuid: {b3e675d7-2554-4f18-830b-2762732560de}
+         ClassicEventDescriptor: 0x25  0x00 0x0002
+         MofLength: 12
+
+Warning: EventSink {26f47713-fd49-471d-a67d-0561c7173f96} signaled an Invalid Event:
+         Event#: 264744   (T#0:#264744)
+         TimeStamp:    8641629, Process: 5244, Thread:   -1, Cpu:   6
+         ClassicEventGuid: {b3e675d7-2554-4f18-830b-2762732560de}
+         ClassicEventDescriptor: 0x25  0x00 0x0002
+         MofLength: 12
+
+Warning: EventSink {26f47713-fd49-471d-a67d-0561c7173f96} signaled an Invalid Event:
+         Event#: 295246   (T#0:#295246)
+         TimeStamp:    8666644, Process: 1844, Thread:   -1, Cpu:  14
+         ClassicEventGuid: {b3e675d7-2554-4f18-830b-2762732560de}
+         ClassicEventDescriptor: 0x25  0x00 0x0002
+         MofLength: 12
+
+Warning: EventSink {26f47713-fd49-471d-a67d-0561c7173f96} signaled an Invalid Event:
+         Event#: 295255   (T#0:#295255)
+         TimeStamp:    8666656, Process: 1844, Thread:   -1, Cpu:  14
+         ClassicEventGuid: {b3e675d7-2554-4f18-830b-2762732560de}
+         ClassicEventDescriptor: 0x25  0x00 0x0002
+         MofLength: 12
